@@ -39,6 +39,7 @@ import Home from "./page/home/Home";
 import Cart from "./page/cart/Cart";
 /************************************************************/
 import {AdminDashboard} from "./admin/pages"
+import SellerProfileView from "./page/seller_profile_view/SellerProfileView";
 function App() {
   return (
     <>
@@ -91,7 +92,8 @@ function App() {
         <Route path="/seller_dashboard/team-list" element={<TeamList />} />
         <Route path="/user_logout" element={<UserLogout />} />
         <Route path="/super-admin" element={<AdminDashboard />} />
-
+        <Route path="/:slugs" element={<SellerProfileView />} />
+        
         {/* DAHSBOARD ROUTE END HERE */}
       </Routes>
     </>

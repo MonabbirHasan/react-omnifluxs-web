@@ -1,0 +1,30 @@
+.seller_profile_view {
+  background-color: #f6f8fa;
+  padding-top: 70px;
+  margin-top: 20px;
+}
+.seller_profile_view .seller_profile_view_wrapper {
+  padding: 10px;
+}
+.seller_profile_view .seller_profile_view_left {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+  border: 3px solid #fff;
+  /* margin-bottom: 10px; */
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.seller_profile_view .seller_profile_view_right {
+  padding: 5px;
+}
+.seller_profile_view .seller_profile_view_right .gig_card {
+  background-color: transparent;
+  box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+  border: 3px solid #fff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
