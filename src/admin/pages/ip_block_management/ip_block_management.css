@@ -1,0 +1,17 @@
+.ip_block_management {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f6f8fa;
+}
+.ip_block_management .ip_block_management_wrapper {
+  padding: 1px;
+}
+.ip_block_management .ip_block_management_wrapper .ip_block_management_form,
+.ip_block_management_table {
+  background-color: transparent;
+  box-shadow: -2px -2px 3px #eee, 2px 2px 3px #eee;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}

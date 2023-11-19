@@ -1,0 +1,66 @@
+.funds_page {
+    padding: 5px;
+    /* background: #e9ebf4; */
+    border: 1px solid #fff;
+    /* box-shadow: -3px -3px 3px #EDEFF6, 3px 3px 3px #EDEFF6; */
+    border-radius: 10px;
+}
+
+.funds_page .add_funds_wrapper {
+    padding: 5px;
+}
+
+/* fund_title_section */
+.funds_page .add_funds_wrapper .fund_title_section {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+.funds_page .add_funds_wrapper .fund_title_section h3 {
+    text-transform: uppercase;
+    font-family: fantasy;
+    letter-spacing: 1px;
+    color: #000;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.funds_page .add_funds_wrapper .fund_title_section p {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+/* pay_methods_section */
+.funds_page .add_funds_wrapper .pay_methods_section {
+    padding: 30px 0;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.funds_page .add_funds_wrapper .pay_methods_section .payment_cards {
+    padding: 10px;
+    background: #eee;
+    display: grid;
+    gap: 10px;
+    width: 150px;
+    margin: 10px;
+    box-shadow: -3px -3px 5px #eee, 3px 3px 5px #eee;
+    border: 2px solid #fff;
+}
+
+.funds_page .add_funds_wrapper .pay_methods_section .payment_cards img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.funds_page .add_funds_wrapper .pay_methods_section .payment_cards button {
+    text-transform: capitalize;
+    background: linear-gradient(50deg, #00f,#db0cff);
+    color: white;
+}

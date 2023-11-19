@@ -1,0 +1,334 @@
+.dashboard_main {
+    padding: 0;
+    width: 100%;
+}
+
+.dashboard_main .dashboard_wrapper .features .analytic_item {
+    padding: 20px;
+    background: #FDFEFE;
+    box-shadow: -4px -4px 4px #EDEFF6, 4px 4px 4px #EDEFF6;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.dashboard_main .dashboard_wrapper .analytic_item .analytic_item_head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard_main .dashboard_wrapper .analytic_item .analytic_item_head span {
+    text-transform: capitalize;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.dashboard_main .dashboard_wrapper .analytic_item .analytic_item_body span {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    margin-top: 5px;
+    display: block;
+    text-align: left;
+}
+
+.dashboard_main .dashboard_wrapper .analytic_item .analytic_item_footer {
+    padding-top: 5px;
+}
+
+.dashboard_main .dashboard_wrapper .analytic_item .analytic_item_footer span {
+    padding: 0 2px;
+    color: #fff;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+.dashboard_main .dashboard_wrapper .analytic_item .analytic_item_footer span svg {
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+/*  *selse_chart*/
+
+.selse_chart {
+    padding: 20px 0;
+    background: #EDEFF6;
+    box-shadow: -4px -4px 4px #EDEFF6, 4px 4px 4px #EDEFF6;
+    border: 1px solid #FDFDFD;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+.smm_product {
+    padding: 20px;
+    background: #EDEFF6;
+    box-shadow: -4px -4px 4px #EDEFF6, 4px 4px 4px #EDEFF6;
+    border: 1px solid #FDFDFD;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+#product_table tr td,tr th{
+    border: 2px solid #eee;
+}
+
+.chart_title {
+    padding-left: 20px;
+}
+
+.chart_title h3 {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+/* order_table */
+/* .order_table {} */
+
+/* user_table */
+/* .user_table {} */
+
+/* date_time_calender */
+.date_time_calender {
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background: #111;
+    box-shadow: -4px -4px 4px #bbb, 4px 4px 4px #bbb;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.date_time_calender .date_time {
+    padding: 5px;
+    background: #222;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.date_time_calender .weather {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.date_time_calender .weather h2 {
+    font-size: 16px;
+    padding: 5px 0;
+    color: white;
+    text-transform: capitalize;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.date_time_calender .weather .country_name {
+    color: white;
+    font-size: 14px !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.date_time_calender .weather .temperature {
+    color: white;
+    font-size: 14px !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.date_time_calender .weather .current_weather {
+    color: white;
+    font-size: 14px !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.date_time_calender .weather .weather_cloud svg {
+    font-size: 2rem;
+    color: white;
+}
+
+/* date time style start here */
+.date_time_calender .date_time p {
+    text-transform: uppercase;
+    color: white;
+}
+
+.date_time_calender .date_time p:first-child {
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: fantasy;
+    letter-spacing: 1px;
+}
+
+.date_time_calender .date_time p:last-child {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+.date_time_calender .custom-calendar {
+    background-color: #222;
+    color: #333;
+}
+
+.date_time_calender .css-10wpov9-MuiTypography-root {
+    color: white;
+}
+
+.date_time_calender .css-rhmlg1-MuiTypography-root-MuiDayCalendar-weekDayLabel {
+    color: white;
+    background: #333;
+    border: 5px;
+    margin-bottom: 10px;
+}
+
+.date_time_calender .css-1nkg345-MuiButtonBase-root-MuiIconButton-root-MuiPickersArrowSwitcher-button svg {
+    color: #eee;
+    border-radius: 30px;
+    background: #333;
+}
+
+.date_time_calender .css-kg9q0s-MuiButtonBase-root-MuiIconButton-root-MuiPickersArrowSwitcher-button svg {
+    color: #eee;
+    border-radius: 30px;
+    background: #333;
+}
+
+.date_time_calender .css-cyzddl-MuiPickersSlideTransition-root-MuiDayCalendar-slideTransition:not(.MuiDateRangeCalendar-dayDragging) .MuiDateRangePickerDay-dayOutsideRangeInterval {
+    border-color: #21f123;
+    border-width: 2px;
+    vertical-align: middle;
+    background: #333;
+}
+
+.date_time_calender .css-cyzddl-MuiPickersSlideTransition-root-MuiDayCalendar-slideTransition:not(.MuiDateRangeCalendar-dayDragging) .MuiDateRangePickerDay-dayOutsideRangeInterval {
+    color: white;
+}
+
+/* todo_list style start here */
+.todo_list {
+    padding: 10px;
+}
+
+.todo_list h6 {
+    text-transform: capitalize;
+    color: white;
+    font-size: 14px;
+    padding: 5px 0;
+    font-family: sans-serif;
+}
+
+.todo_list {
+    padding: 5px;
+}
+
+.todo_list .todo_list_item {
+    padding: 5px;
+    height: 200px;
+    overflow: scroll;
+}
+
+.todo_list .todo_list_item::-webkit-scrollbar {
+    width: 0;
+}
+
+.todo_list .todo_list_item ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.todo_list .todo_list_item ul li {
+    color: white;
+    list-style: none;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-family: cursive;
+    background: #333;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    vertical-align: middle;
+    border: 2px solid #aaa;
+    cursor: pointer;
+}
+
+.todo_list .todo_list_item ul li span button {
+    border-radius: 0;
+    margin-right: 5px;
+}
+
+.todo_list .todo_list_item ul li span button:first-child {
+    background: #111;
+    border-radius: 30px;
+}
+
+.todo_list .todo_list_item ul li span button:first-child:hover {
+    background-color: #04a3ff;
+}
+
+.todo_list .todo_list_item ul li span button:last-child:hover {
+    background-color: red;
+}
+
+.todo_list .todo_list_item ul li span button:last-child {
+    background: #111;
+    border-radius: 30px;
+}
+
+.todo_list .todo_list_item ul li span button svg {
+    color: white;
+    font-size: 14px;
+}
+
+.todo_list .todo_list_item ul li:hover {
+    background: #bbb;
+    color: black;
+}
+
+.todo_list .todo_list .todo_form {
+    display: block;
+}
+
+.todo_list .todo_list input {
+    border-radius: 10px;
+    text-transform: capitalize;
+
+}
+
+.todo_list .todo_list textarea {
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+
+.todo_list .todo_list .save_btn_box button {
+    text-transform: uppercase;
+    font-family: cursive;
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* todo_list style end here */
+/* order_table start here */
+.order_table {
+    margin: 30px 0;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: -3px -3px 3px #eee, 3px 3px 3px #eee;
+}
+
+.order_table table {
+    margin: 10px;
+}
+
+/* order_table end here*/

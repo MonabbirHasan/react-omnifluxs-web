@@ -1,0 +1,18 @@
+
+        <Route path='/seller_dashboard' element={<Dashboard />} /> {/* total revenue total user total product recent order recent user todolist calender weather clock world maps*/}
+        <Route path='/seller_dashboard/profile' element={<Dashboard />} /> {/* name email phone, address, city, states, zipcode, image, bio, password, */}
+        <Route path='/seller_dashboard/edit-profile' element={<Dashboard />} /> {/* edit all name email phone, address, city, states, zipcode, image, bio, password, */}
+        <Route path='/seller_dashboard/funds' element={<Dashboard />} /> {/* user can add funds means dollers min>$300 max>$1000 */}
+        <Route path='/seller_dashboard/order' element={<Dashboard />} /> {/* seller can see client order and status */}
+        <Route path='/seller_dashboard/order-status' element={<Dashboard />} /> {/* client order status */}
+        <Route path='/seller_dashboard/favourites' element={<Dashboard />} /> {/* seller own favourites item can see */}
+        <Route path='/seller_dashboard/payments-methods' element={<Dashboard />} /> {/* seller can see payment methods and he can send new payment methods add request from platform owner*/}
+        <Route path='/seller_dashboard/selling' element={<Dashboard />} /> {/* selling account youtube channel gaming id and website*/}
+        <Route path='/seller_dashboard/my-cart' element={<Dashboard />} /> {/* selling can see there ad cart item*/}
+        <Route path='/seller_dashboard/my-order' element={<Dashboard />} /> {/* selling own order can see*/}
+        <Route path='/seller_dashboard/show-advertisement' element={<Dashboard />} /> {/* selling can create custom ads and send request platform owner for dispaly seller ads in the platform*/}
+        <Route path='/seller_dashboard/add-voucher' element={<Dashboard />} /> {/* selling can create voucher for here clients*/}
+        <Route path='/seller_dashboard/withdrawal' element={<Dashboard />} /> {/* selling can see there income and he can withdrawal money using there online transection system*/}
+        <Route path='/seller_dashboard/posts' element={<Dashboard />} /> {/* selling can upload blogs*/}
+        <Route path='/seller_dashboard/logout' element={<Dashboard />} /> {/* selling can logout any time if here needs*/}
+        <Route path='/seller_dashboard/settings' element={<Dashboard />} /> {/* selling dashboard settigns*/}

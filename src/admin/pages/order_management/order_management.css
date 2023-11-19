@@ -1,0 +1,15 @@
+.order_management {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f6f8fa;
+}
+.order_management .order_wrapper {
+  padding: 1px;
+}
+.order_management .order_wrapper .orders_data_tables {
+  padding: 10px;
+  background-color: transparent;
+  box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+  border: 3px solid #fff;
+  border-radius: 5px;
+}

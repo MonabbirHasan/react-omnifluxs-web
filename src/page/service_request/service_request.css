@@ -1,0 +1,15 @@
+.service_request{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+.service_request .service_req_wrapper{
+    padding: 20px;
+    margin: 15vh 0;
+    background-color: #eee;
+    border-radius: 5px;
+    border: 3px solid #fff;
+    box-shadow: -3px -3px 5px #eee,3px 3px #eee;
+}

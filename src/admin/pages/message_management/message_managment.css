@@ -1,0 +1,52 @@
+.message_managment {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f6f8fa;
+}
+.message_managment .message_managment_wrapper {
+  padding: auto;
+}
+.message_managment .message_managment_wrapper .message_managment_sidebar {
+  background-color: transparent;
+  box-shadow: -2px -2px 3px #eee, 2px 2px 3px #eee;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.message_managment .message_managment_sidebar {
+  height: 500px;
+  overflow-y: scroll;
+}
+.message_managment .message_managment_body .msg_header {
+  background-color: transparent;
+  box-shadow: -2px -2px 3px #eee, 2px 2px 3px #eee;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.message_managment .message_managment_sidebar::-webkit-scrollbar {
+  width: 5px;
+  background-color: #eee;
+}
+.message_managment .message_managment_sidebar::-webkit-scrollbar-thumb {
+  background-color: #111;
+  width: 5px;
+  border-radius: 5px;
+}
+
+.message_managment .message_managment_body .msg_body {
+  height: 400px;
+  overflow-y: scroll;
+  padding: 20px 10px;
+}
+.message_managment .message_managment_body .msg_body::-webkit-scrollbar {
+  width: 5px;
+  background-color: #eee;
+}
+.message_managment .message_managment_body .msg_body::-webkit-scrollbar-thumb {
+  background-color: #111;
+  width: 5px;
+  border-radius: 5px;
+}

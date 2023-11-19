@@ -1,0 +1,33 @@
+.team_list_page {
+  padding: 10px 0;
+  width: 100%;
+  background: linear-gradient(200deg, #f0f, rgb(0, 4, 255));
+  height: auto;
+}
+.team_list_page .team_list_wrapper {
+  margin-top: 10px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.23);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 3px solid #fff;
+}
+.team_list_page .team_list_wrapper input {
+  border-color: #fff;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  color: black;
+}
+.team_list_page .team_list_wrapper .referred_team_list thead,
+tr,
+td {
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  text-transform: capitalize;
+}
+.team_list_page .team_list_wrapper .referred_team_list {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: white;
+}

@@ -1,0 +1,18 @@
+.bpostcategory_management {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f6f8fa;
+}
+.bpostcategory_management .blog_category_wrapper {
+  padding: 1px;
+  margin: 0;
+}
+.bpostcategory_management .blog_category_wrapper .bcategory_form,
+.bcategory_table {
+  padding: 10px;
+  background: transparent;
+  box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}

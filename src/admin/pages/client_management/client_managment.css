@@ -1,0 +1,14 @@
+.client_managment{
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f6f8fa;
+}
+.client_managment .client_managment_wrapper{padding: 1px;}
+.client_managment .client_managment_wrapper .client_managment_form,.client_managment_table{
+    padding: 10px;
+    background-color: transparent;
+    box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}

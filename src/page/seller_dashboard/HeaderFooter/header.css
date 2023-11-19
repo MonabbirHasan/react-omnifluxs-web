@@ -1,0 +1,9 @@
+.style_modal_scroll::-webkit-scrollbar{
+    width: 5px;
+    background: black;
+    border-radius: 5px;
+}
+.style_modal_scroll::-webkit-scrollbar-thumb{
+    width: 5px;
+    background: green;
+}

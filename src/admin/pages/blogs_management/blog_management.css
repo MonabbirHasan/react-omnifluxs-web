@@ -1,0 +1,17 @@
+.blog_management {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f6f8fa;
+}
+.blog_management .posts_wrapper {
+  padding: 2px;
+}
+.blog_management .posts_form,
+.posts_table {
+  padding: 10px;
+  background-color: transparent;
+  box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,218 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+    /* CSS */
+
+}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    /* CSS */
+
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* CSS */
+
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    /* CSS */
+
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    /* CSS */
+
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    /* CSS */
+
+    .banner-left {
+        padding: 50px;
+        display: block;
+        height: 4vh;
+        position: relative;
+        top: 50px;
+    }
+
+    .banner-left .banner_headline h1 {
+        text-transform: capitalize;
+        color: #fff;
+        font-weight: bolder;
+        padding: 0 20px;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .banner-left .banner_headline p {
+        text-transform: capitalize;
+        color: #fff;
+        padding: 0 20px;
+        width: 100%;
+        font-size: 14px;
+        font-weight: 300px;
+    }
+
+    .banner-left .btn_box1 button,
+    .btn_box2 button {
+        margin: 6px;
+    }
+
+    .card_wrapper {
+        display: block !important;
+        justify-content: center;
+        margin-left: 10px;
+    }
+
+    /* adds_wrapper */
+    .advertisment .adds_wrapper {
+        grid-template-columns: auto !important;
+    }
+
+    .advertisment .adds_wrapper .adds_left h2 {
+        width: 100%;
+    }
+
+    .advertisment .adds_wrapper .adds_left p {
+        font-size: 12px;
+    }
+
+    .advertisment .adds_wrapper .adds_right h3 {
+        font-size: 20px;
+        color: #fff;
+        font-family: monospace;
+    }
+
+    .banner-left .banner_button_box #explore {
+        margin: 10px;
+        width: 100%;
+        margin: auto;
+        background: #222;
+        text-transform: capitalize;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: 1px;
+        border: 2px solid #222;
+        border-radius: 30px;
+    }
+
+    /* counter */
+    .counter {
+        grid-template-columns: auto !important;
+        gap: 10px;
+    }
+
+    /* .title_wrapper h2 */
+    .title_wrapper h2 {
+        font-size: 1.5rem !important;
+    }
+
+    /*.PaymentSupport */
+    .PaymentSupport .payment_wrapper {
+        padding: 10px 0;
+        display: grid !important;
+    }
+
+    .PaymentSupport .payment_wrapper .payment_left h3 {
+        font-size: 1.5rem !important;
+    }
+
+    .PaymentSupport .payment_wrapper .payment_left p {
+        font-size: 12px !important;
+    }
+
+    /* .secure */
+    .secure .secure_wrapper {
+        padding: 5px;
+        display: grid !important;
+    }
+
+    .secure .secure_wrapper .secure_right h3 {
+        font-size: 1.5rem !important;
+    }
+
+    .secure .secure_wrapper .secure_right p {
+        font-size: 12px;
+    }
+
+    /* .advertisment */
+    .advertisment .adds_wrapper .adds_left h2 {
+        font-size: 1.4rem !important;
+    }
+
+    .advertisment .adds_wrapper .adds_left p {
+        font-size: 12px !important;
+    }
+
+    /* latest blog section style start here */
+    .blogs_wrapper {
+        grid-template-columns: auto;
+    }
+
+    /* footer_right_contact */
+    footer .footer_right_contact {
+        position: relative;
+    }
+
+    .footer_item .subscriber_box {
+        display: flex !important;
+    }
+
+    /****************************************
+        about page responsive start here 
+    ***************************************/
+    .about_page .ourmission {
+        display: grid !important;
+    }
+
+    .about_page .ourmission p {
+        font-size: 12px !important;
+    }
+
+    .about_page .ourvission {
+        display: grid !important;
+    }
+
+    .about_page .ourvission p {
+        font-size: 12px !important;
+    }
+
+    .about_page .about p {
+        font-size: 12px !important;
+    }
+}

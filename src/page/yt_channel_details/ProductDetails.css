@@ -1,0 +1,187 @@
+.ProductDetails_page {
+    padding: 70px 0;
+    width: 100%;
+}
+
+.ProductDetails_page .product_details_wrapper {
+    padding: 30px 0;
+}
+
+.ProductDetails_page .product_details_wrapper .product_details_left {
+    padding: 10px;
+}
+
+.ProductDetails_page .product_details_wrapper .product_details_left .product_slider_box {
+    padding: 5px;
+}
+
+.ProductDetails_page .product_details_wrapper .product_details_left .product_slider_box .product_share_option {
+    padding: 10px 0;
+}
+
+.ProductDetails_page .product_details_wrapper .product_details_left .product_slider_box .product_share_option span {
+    padding: 5px;
+    background: #fff;
+    margin: 5px;
+    display: inline-block;
+    border: 2px solid dodgerblue;
+    border-radius: 5px;
+    /* box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee; */
+    cursor: pointer;
+}
+
+.ProductDetails_page .product_details_wrapper .product_details_left .product_slider_box .product_share_option span:hover {
+    background-color: dodgerblue;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.ProductDetails_page .product_details_wrapper .product_details_left .product_slider_box .product_share_option span svg {
+    font-size: 1.3rem;
+}
+
+.ProductDetails_page .product_details_wrapper .product_details_left .product_slider_box .main_thumbnail {
+    background: #eee;
+    box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+    border: 2px solid #ffffff;
+    padding: 20px 10px;
+}
+
+.ProductDetails_page .product_details_wrapper .product_details_left .product_slider_box .slideritem {
+    padding: 5;
+}
+
+.ProductDetails_page .product_details_wrapper .product_details_left .product_slider_box .slideritem img {
+    width: 100%;
+    height: 450px;
+    border-radius: 5px;
+}
+
+.ProductDetails_page .product_details_wrapper .product_details_left .product_description {
+    padding: 10px 0;
+}
+
+.ProductDetails_page .product_details_wrapper .product_details_left .product_description .product_title {
+    text-transform: capitalize;
+    font-size: 18px;
+    padding: 10px 0;
+    font-family: Roboto, Helvetica;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.ProductDetails_page .product_details_wrapper .product_details_left .product_description .description {
+    text-transform: capitalize;
+    font-size: 14px;
+    text-align: left;
+    word-spacing: 1px;
+    font-family: 'Poppins' !important;
+    line-height: 23px;
+}
+
+/* product_details_right */
+.product_details_right {
+    padding: 5px 10px;
+    width: 100%;
+    margin-top: 10px;
+    height: auto;
+    background: #eee;
+    box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+}
+
+.product_details_right .product_summary {
+    color: #111;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+.product_details_right .summary_box {
+    padding: 10px;
+}
+
+.product_details_right .summary_box .product_summary_item {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    margin: 10px 0;
+    grid-template-columns: auto auto;
+    border-top: 1px solid #bbb;
+    justify-content: left;
+}
+
+.product_details_right .summary_box .product_summary_item span {
+    color: #111;
+    text-transform: capitalize;
+    padding: 5px;
+    margin-top: 5px;
+    /* border: 1px solid #999; */
+    font-size: 14px;
+    text-align-last: left;
+    vertical-align: center;
+    letter-spacing: 1px;
+    width: 220px;
+    font-weight: 400;
+    font-family: sans-serif;
+    vertical-align: middle;
+}
+
+.product_details_right .summary_box .product_summary_item span:last-child {
+    font-family: cursive;
+}
+
+.product_details_right .summary_box .product_summary_item span:nth-child(1) {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.product_details_right .summary_box .product_summary_item span:nth-child(2) {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* user_review section start here*/
+.user_review {
+    padding: 30px;
+    background: #eee;
+    box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+    border: 2px solid #ffffff;
+}
+
+.user_review .rating svg {
+    color: orange;
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.user_review .feeback_manual button {
+    background-color: dodgerblue;
+}
+
+.user_review .feeback_manual textarea {
+    resize: none;
+}
+
+.user_review h3 {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+    color: #999;
+}
+
+.user_review .feeback_btn_box {
+    padding: 20px 0;
+}
+
+.user_review .feeback_btn_box button {
+    background: #6759ff;
+    color: #fff;
+    padding: 10px;
+    text-transform: capitalize;
+    margin-right: 10px;
+}

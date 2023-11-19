@@ -1,0 +1,185 @@
+.courses_page {
+  padding: 50px 0;
+  width: 100%;
+}
+
+.courses_page .course_banner {
+  width: 100%;
+}
+
+.courses_page .course_banner img {
+  width: 100%;
+  height: 100vh;
+}
+
+.courses_page .course_wrapper {
+  padding: 70px 0;
+}
+
+.courses_page .course_wrapper .course_filter {
+  padding: 10px;
+  margin-bottom: 20px;
+  background: #eee;
+  box-shadow: -3px -3px 3px #eee, 3px 3px 3px #eee;
+  border: 3px solid #ffffff;
+  border-radius: 5px;
+}
+
+.courses_page .course_wrapper .course_filter .filter_input {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  /* justify-content: space-evenly; */
+  margin-top: 4px;
+  gap: 30px;
+}
+
+.courses_page .course_wrapper .course_filter .filter_input .filter_btn button {
+  width: 100%;
+}
+
+.courses_page .course_wrapper .course_filter .filter_input select {
+  background-color: black;
+  color: #bbb;
+  text-transform: capitalize;
+}
+
+.courses_page .course_wrapper .course_filter .filter_input input {
+  background-color: black;
+  color: white;
+  text-transform: capitalize;
+}
+
+.courses_page .course_wrapper .course_filter .filter_input input::placeholder {
+  color: #bbb;
+}
+
+.courses_page .course_wrapper .course_item {
+  padding: 10px;
+  /* background: linear-gradient(30deg, #eee, #ff6600); */
+  box-shadow: -3px -3px 3px #eee, 3px 3px 3px #eee;
+  border: 3px solid #ffffff;
+  display: inline-block;
+  width: 320px;
+  height:70vh;
+  overflow: hidden;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+.courses_page .course_wrapper .course_item .courses_thumbnail {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  transition: 0.5s;
+  background: dodgerblue;
+  clip-path: polygon(0% 10%, 100% 0, 100% 100%, 100% 85%, 0 95%);
+}
+.courses_page .course_wrapper .course_item .courses_thumbnail p {
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  min-height: 30vh;
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 24px;
+  font-family: cursive;
+  justify-content: center;
+}
+
+/* .courses_page .course_wrapper .course_item img:hover {
+    transform: scale(1.1);
+} */
+
+.courses_page .course_wrapper .course_item h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+}
+
+.courses_page .course_wrapper .course_item p {
+  font-size: 12px;
+  color: black;
+  text-transform: capitalize;
+  font-weight: normal;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.courses_page .course_wrapper .course_item p span {
+  color: dodgerblue;
+}
+
+.courses_page .course_wrapper .course_item .course_duration span {
+  text-transform: uppercase;
+  color: white;
+  font-size: 12px;
+  background: dodgerblue;
+}
+
+.courses_page .course_wrapper .course_item .course_item_footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.courses_page .course_wrapper .course_item .course_item_footer .course_rating {
+  padding-top: 5px;
+}
+
+.courses_page
+  .course_wrapper
+  .course_item
+  .course_item_footer
+  .course_rating
+  span
+  svg {
+  color: #ff5e00;
+  font-size: 18px;
+}
+
+.courses_page .course_wrapper .course_item .course_item_footer .course_price {
+  padding-right: 10px;
+}
+
+.courses_page
+  .course_wrapper
+  .course_item
+  .course_item_footer
+  .course_price
+  span {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: fantasy;
+  letter-spacing: 1px;
+  color: black;
+}
+
+.courses_page
+  .course_wrapper
+  .course_item
+  .course_item_footer
+  .course_price
+  del {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-right: 10px;
+  color: gray;
+}
+
+.courses_page .course_wrapper .course_item .course_buy_btn_box {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.courses_page .course_wrapper .course_item .course_buy_btn_box button {
+  background: black;
+  text-transform: capitalize;
+  width: 100%;
+}
+.courses_page .course_wrapper .course_item .course_buy_btn_box button a {
+  color: white;
+  text-decoration: none;
+}

@@ -1,0 +1,20 @@
+.parmission_management {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f6f8fa;
+}
+.parmission_management .parmission_management_wrapper {
+  padding: 1px;
+}
+
+.parmission_management
+  .parmission_management_wrapper
+  .parmission_management_form,
+.parmission_management_table {
+  background-color: transparent;
+  box-shadow: -2px -2px 3px #eee, 2px 2px 3px #eee;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}

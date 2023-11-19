@@ -1,0 +1,171 @@
+.about_page {
+    padding: 0 0;
+    width: 100%;
+}
+
+.about_page .about_wrapper {
+    padding: 20px 0;
+    width: 100%;
+}
+
+.about_page .owner_info {
+    text-align: center;
+}
+
+.about_page .owner_info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 5px solid #fff;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about_page .owner_info .owner_right {
+    /* background: #eee;
+    box-shadow: -2px -2px 2px #fef, 2px 2px 2px #fef;
+    border: 3px solid #ffffff; */
+    background: rgba(255, 255, 255, .23);
+    backdrop-filter: blur(30px);
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    position: absolute;
+    bottom: 40%;
+    left: 40%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: left;
+    gap: 30px;
+}
+
+.about_page .owner_info .owner_right .owner_details {}
+
+.about_page .owner_info .owner_right .owner_details .follower span button {
+    background: black;
+    margin-right: 5px;
+}
+
+.about_page .owner_info .owner_right .owner_details .follower span button:hover {
+    background: white;
+}
+
+.about_page .owner_info .owner_right .owner_details .follower span button:hover svg {
+    color: black;
+}
+
+.about_page .owner_info .owner_right .owner_details .follower span svg {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.about_page .owner_info .owner_right h5 {
+    text-transform: capitalize;
+    text-align: left;
+    margin-top: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+.about_page .owner_info .owner_right p {
+    text-transform: capitalize;
+    font-weight: 400;
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.about_page img {
+    width: 100%;
+    height: 90vh;
+}
+
+.about_page .about {
+    padding: 10px;
+}
+
+.about_page .about p {
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #111;
+    word-spacing: 1px;
+}
+
+.about_page .ourmission {
+    display: flex;
+    padding: 50px 0;
+}
+
+.about_page .ourmission .mission_img {
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+.about_page .ourmission .mission_img img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.about_page .ourmission .mission_content {
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+.about_page .ourmission h3 {
+    text-transform: capitalize;
+    font-size: 500;
+    font-family: sans-serif;
+}
+
+.about_page .ourmission p {
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #111;
+    word-spacing: 1px;
+}
+
+/* ourvission */
+.about_page .ourvission {
+    padding: 50px 0;
+    display: flex;
+}
+
+.about_page .ourvission .vission_img {
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+.about_page .ourvission .vission_img img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.about_page .ourvission .vission_content {
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+
+.about_page .ourvission h3 {
+    text-transform: capitalize;
+    font-size: 500;
+    font-family: sans-serif;
+}
+
+.about_page .ourvission p {
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #111;
+    word-spacing: 1px;
+}

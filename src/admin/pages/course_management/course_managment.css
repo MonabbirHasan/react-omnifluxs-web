@@ -1,0 +1,16 @@
+.course_managment{
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f6f8fa;
+}
+.course_managment .course_managment_wrapper{
+    padding: 1px;
+}
+.course_managment .course_managment_wrapper .course_managment_form{
+    background-color: transparent;
+    box-shadow: -2px -2px 3px #eee, 2px 2px 3px #eee;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}

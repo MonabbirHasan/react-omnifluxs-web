@@ -1,0 +1,65 @@
+.user_referral_page {
+  padding: 10px 0;
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+}
+.user_referral_page .referr_wrapper {
+  padding: 10px;
+  width: 100%;
+}
+.referr_wrapper .referral_box {
+  padding: 20px;
+  background: #1e8fffa4;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: left;
+}
+.referr_wrapper .referral_box h3 {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 16px;
+}
+.referr_wrapper .referral_box p {
+  text-transform: capitalize;
+  color: white;
+  font-weight: 400;
+  font-family: cursive;
+}
+.referr_wrapper .referral_box .referr_input_group {
+  padding: 15px 0;
+  display: grid;
+}
+.referral_box .referr_input_group input {
+  border: 2px solid #eee;
+  background:none;
+  color: #fff;
+  font-size: 14px;
+  text-transform: lowercase;
+  mask-mode: luminance;
+  outline: none;
+}
+
+.referral_box .referr_input_group input:focus{
+    border: #eee;
+    background: none;
+}
+.referr_wrapper .referral_box .referr_social_site {
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.referr_social_site .referr_social_icon_wrapper {
+  display: inline-block;
+}
+.referral_box .referr_social_site .referr_social_icon_wrapper button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+.referral_box .referr_social_site .referr_social_icon_wrapper span:hover{
+    background: black;
+}

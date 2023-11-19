@@ -1,0 +1,101 @@
+.shopcard {
+    padding: 20px;
+}
+
+.shopcard .shop_card_box {
+    padding: 0;
+}
+
+.shop_card_box .shop_card {
+    padding: 10px;
+    /* box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+    background: #fff; */
+    background: linear-gradient(to right, #eff0f2, #fefefe);
+    box-shadow: 5px 0 8px rgba(0, 0, 0, 0.2);
+    border: 3px solid #fff;
+    width: 320px;
+    height: auto;
+    text-align: left;
+}
+
+.shop_card_box .shop_card img {
+    width: 100%;
+    height: 230px;
+    user-select: none;
+}
+
+.shop_card_box .shop_card .title {
+    font-size: 16px;
+    padding: 5px 0;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.shop_card_box .shop_card .company_name {
+    font-size: 12px;
+    margin: 5px 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+.shop_card_box .shop_card .shop_card_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop_card_box .shop_card .shop_card_info p {
+    margin: 0;
+    padding: 0;
+}
+
+.shop_card_box .shop_card .shop_card_info .price {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: fantasy;
+    letter-spacing: 1px;
+    padding: 0;
+}
+
+.shop_card_box .shop_card .shop_card_info .rating span {
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.shop_card_box .shop_card .card_badge {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-family: cursive;
+}
+
+.shop_card_box .shop_card .shop_card_info .rating span svg {
+    color: orange;
+    font-size: 20px;
+}
+
+.shop_card_box .shop_card .shop_card_info .shop_bag {
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.shop_card_box .shop_card .shop_card_info .shop_bag svg:hover {
+    color: dodgerblue;
+}
+
+.shop_card_box .shop_card .shop_card_info .shop_bag svg {
+    font-size: 2rem;
+    color: orange;
+}
+
+.shop_card_box .shop_card .shop_card_info .shop_btn button {
+    text-transform: capitalize;
+    font-size: 14px;
+    border-radius: 0;
+    letter-spacing: 1px;
+    background: #2196f3;
+    border-radius: 5px;
+    color: white;
+}

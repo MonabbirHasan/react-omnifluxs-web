@@ -1,0 +1,68 @@
+
+.pricingCard .pricing_card {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+    box-shadow: -3px -3px 3px #eef, 3px 3px 3px #eef;
+    border: 3px solid #fff;
+    display: inline-block;
+    width: 320px;
+}
+
+.pricingCard .pricing_card .packege_name {
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.pricingCard .pricing_card .packege_name{
+    background: black;
+}
+.pricingCard .pricing_card .packege_name h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.pricingCard .pricing_card .price {
+    text-transform: capitalizea;
+    font-weight: 500;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pricingCard .pricing_card .price span {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.pricingCard .pricing_card .package_info_list {
+    display: grid;
+    padding: 10px 0;
+}
+
+/* .pricingCard .pricing_card .package_info_list span{} */
+.pricingCard .pricing_card .package_info_list span button {
+    color: #1fbe22;
+}
+
+.pricingCard .pricing_card .package_info_list span p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: cursive;
+    text-transform: capitalize;
+}
+
+.pricingCard .pricing_card .puches_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricingCard .pricing_card .puches_btn button {
+    width: 100%;
+}

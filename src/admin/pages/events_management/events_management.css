@@ -1,0 +1,45 @@
+.events_management {
+  margin: 0;
+  background-color: #f6f8fa;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+.custom-calendar {
+  padding: 20px;
+}
+.calander_wrapper {
+  padding: 10px;
+  /* background-color: #eee;
+  box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+  border: 3px solid #fff; */
+}
+.all_events_grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+  overflow-y: scroll;
+  height: 500px;
+}
+.all_events_grid::-webkit-scrollbar {
+  width: 5px;
+  background-color: #eee;
+}
+.all_events_grid::-webkit-scrollbar-thumb {
+  width: 5px;
+  background-color: black;
+  border-radius: 5px;
+}
+.all_events_grid .events_item_card {
+  padding: 10px;
+  background-color: transparent;
+  box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+  border: 3px solid #fff;
+  display: inline-block;
+  border-radius: 5px;
+}
+.add_events_form {
+  padding: 0 0 20px 0;
+}

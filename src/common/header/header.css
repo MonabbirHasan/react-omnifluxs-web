@@ -1,0 +1,81 @@
+header .navbar-nav-scroll a {
+    text-decoration: none !important;
+    font-weight: 500;
+    transition: .2s ease-in;
+    color: #111;
+}
+header .navbar-brand{
+    text-transform: uppercase;
+    font-weight:500;
+    letter-spacing: 1px;
+    font-family: fantasy;
+    font-size: 2rem;
+}
+header .navbar-brand span .brand_part_tow{
+    color: #1fb61f;
+}
+header .nav-link {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #111;
+    font-weight: 300;
+    font-family: fantasy;
+    letter-spacing: 0px;
+    padding: 5px;
+}
+
+header .nav-link a {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #111;
+    font-weight: 300;
+    font-family: fantasy;
+    letter-spacing: 0px;
+    padding: 5px;
+    border-radius: 5px;
+}
+header .nav-link a:hover {
+    color: #fff;
+    background: #111;
+    border: 1px solid #eee;
+    letter-spacing: 1px;
+}
+
+header .nav-link a.active {
+    color: #fff;
+    background: #111;
+    border: 1px solid #eee;
+    letter-spacing: 1px;
+}
+
+header .user {
+    padding: 5px;
+}
+
+header .user span {
+    padding: 5px;
+    cursor: pointer;
+    vertical-align: middle;
+    background: #eee;
+    margin: 0 5px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+
+header .user span .badge {
+    color: #111;
+}
+
+header .user span:hover {
+    background: dodgerblue;
+    color: #fff;
+}
+
+header .user span:hover svg {
+    color: #fff;
+}
+
+header .user span svg {
+    font-size: 1.5rem;
+    color: dodgerblue;
+}

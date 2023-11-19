@@ -1,0 +1,48 @@
+.product_menu_tabs {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f6f8fa;
+}
+.product_menu_tabs .menu_tabls_wrapper {
+  padding: 5px;
+}
+.product_menu_tabs .product_tabs {
+  background-color: transparent;
+  box-shadow: -2px -2px 3px hsl(0, 0%, 93%), 2px 2px 3px #eee;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.facebook_service .facebook_service_wrapper {
+  padding: 1px;
+}
+.youtube_data_table::-webkit-scrollbar {
+  height: 5px;
+  background-color: #eee;
+}
+.youtube_data_table::-webkit-scrollbar-thumb {
+  height: 5px;
+  background-color: #bbb;
+  border-radius: 5px;
+}
+
+.facebook_service .facebook_service_wrapper .facebook_service_table,
+.facebook_service_form,
+.instagram_service_form,
+.facebook_service_table,
+.telegram_service_form,
+.telegram_service_table,
+.twitter_service_form,
+.twitter_service_table,
+.youtube_service_form,
+.youtube_service_table,
+.website_service_form,
+.website_service_table {
+  background-color: transparent;
+  box-shadow: -2px -2px 3px #eee, 2px 2px 3px #eee;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}

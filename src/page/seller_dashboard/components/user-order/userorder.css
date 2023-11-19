@@ -1,0 +1,44 @@
+.userorder_page {
+  background-color: transparent;
+  padding: 30px 0;
+}
+.userorder_page .component_title {
+  padding: 20px 0;
+}
+.userorder_page .component_title h3 {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+.userorder_page .user_order_wrapper {
+  padding: 30px 0;
+}
+
+.userorder_page .user_order_wrapper .user_order_table {
+  background: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: -3px -3px 3px #eee, 3px 3px 3px #eee;
+  border: 3px solid #fff;
+}
+
+.user_order_table tbody tr  {
+  margin: 10px 0;
+}
+.user_order_table tr td {
+  border: transparent !important;
+  margin: 10px 0 !important;
+}
+.user_order_table tr td p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+.user_order_table tr td h6 {
+  margin: 0;
+  padding: 0;
+}
+.user_order_table tr td {
+  color:#111;
+}

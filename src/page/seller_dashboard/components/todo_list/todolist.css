@@ -1,0 +1,9 @@
+.todolist{
+    padding: 50px 0;
+}
+.todolist .todo_wrapper{
+    padding: 10px;
+    background: #EDEFF6;
+    box-shadow: -4px -4px 4px #EDEFF6, 4px 4px 4px #EDEFF6;
+    border: 1px solid #FDFDFD;
+}

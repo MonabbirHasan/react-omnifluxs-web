@@ -1,0 +1,128 @@
+.WebOrder {
+    padding: 70px 0;
+    width: 100%;
+}
+
+.WebOrder .web_order_wrapper {
+    padding: 40px 0;
+}
+
+.WebOrder .web_order_wrapper .tabs {
+    margin-top: 10px;
+}
+
+.WebOrder .web_order_wrapper .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+    margin-top: 10px;
+    background-color: #eee;
+    box-sizing: -2px -2px -2px #eee, 2px 2px 2px #eee;
+    border: 2px solid #ffffff;
+}
+
+.WebOrder .web_order_wrapper .website_summary {
+    padding: 10px 0;
+}
+
+.WebOrder .web_order_wrapper .custom_solution {
+    background: #eee;
+    box-shadow: -2px -2px 2px #eee, 2px 2px 2px #eee;
+    border: 3px #ffffff;
+    padding: 20px;
+    border-style: dotted dashed double;
+}
+
+.WebOrder .web_order_wrapper .custom_solution select {
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-size: 14px;
+    background: #fff;
+    box-shadow: -2px -2px 2px #fff, 2px 2px 2px #fff;
+}
+
+.WebOrder .web_order_wrapper .website_summary .website {
+    margin: 10px 0;
+}
+
+.sigCanvas {
+    background: white;
+    border-radius: 5px;
+    border: 2px solid dodgerblue;
+}
+
+.WebOrder .web_order_wrapper .section_name {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: fantasy;
+    letter-spacing: 1px;
+    padding-left: 5px;
+}
+
+.WebOrder .web_order_wrapper .boxs .control_btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.WebOrder .web_order_wrapper .boxs .control_btn button {
+    margin-right: 10px;
+}
+
+.WebOrder .web_order_wrapper .boxs .options {
+    padding: 30px 0;
+}
+
+.WebOrder .web_order_wrapper .boxs .options .title h3 {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+.WebOrder .web_order_wrapper .boxs .options .title p {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.WebOrder .web_order_wrapper .boxs .options select {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: cursive;
+    padding: 10px;
+    border: none;
+    background-color: #eee;
+    box-shadow: -2px -2px 2px #eee, 2px 2px 2px #eee;
+    border: 3px solid #ffffff;
+}
+
+.WebOrder .web_order_wrapper .boxs .options select option {
+    background-color: #eee;
+    box-shadow: -2px -2px 2px #eee, 2px 2px 2px #eee;
+    border: 3px solid #ffffff !important;
+    color: #111;
+}
+
+.WebOrder .web_order_wrapper .boxs .options button {
+    text-align: right;
+    margin-right: 5px;
+}
+
+.WebOrder .web_order_wrapper .boxs .stepper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.WebOrder .web_order_wrapper .boxs .stepper span.active div {
+    background: dodgerblue;
+}
+
+.WebOrder .web_order_wrapper .boxs .stepper span div {
+    background-color: #eee;
+    box-shadow: -2px -2px 2px #eee, 2px 2px 2px #eee;
+    border: 3px solid #ffffff !important;
+    color: #111;
+    font-family: fantasy;
+}

@@ -1,0 +1,64 @@
+.community_page {
+    padding: 0;
+    width: 100%;
+}
+
+.community_page .community_news {
+    padding: 20px;
+    background-color: #21f123;
+    color: #000;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.community_page .community_page_title {
+    padding: 30px 0;
+}
+
+.community_page .communtity_banner img {
+    width: 100%;
+    height: 90vh;
+}
+
+.community_page .community_wrapper {
+    padding: 40px 0;
+}
+
+.community_page .user_feedback {
+    padding: 20px;
+    margin: 10px 0;
+    background: dodgerblue;
+    display: flex;
+    box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+}
+
+.community_page .user_feedback input {
+    width: 100%;
+    border-radius: 0;
+    text-align: left;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.community_page .user_feedback button {
+    text-transform: capitalize;
+    border-radius: 0;
+}
+
+.community_page .community_wrapper .accordion-item .accordion-button {
+    color: #111;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.community_page .community_wrapper .accordion-item:not(:first-of-type) {
+    border: 1px solid #eee;
+    margin: 10px 0;
+}

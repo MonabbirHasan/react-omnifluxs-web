@@ -1,0 +1,30 @@
+.id_active_plan_page {
+  padding: 10px 0;
+  width: 100%;
+}
+.id_active_plan_page .active_plan_wrapper {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 10px;
+  column-gap: 10px;
+}
+.id_active_plan_page .active_plan_wrapper .plan_item {
+  padding: 10px;
+  background: #eee;
+  box-shadow: -3px -3px 5px #eee, 3px 3px 5px #eee;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+}
+.id_active_plan_page .active_plan_wrapper .plan_item:nth-child(3){
+    background-color: #29ce4d;
+    color: white;
+}
+.id_active_plan_page .active_plan_wrapper .plan_item:nth-child(2){
+    background-color: #A26BFB;
+    color: white;
+}
+.id_active_plan_page .active_plan_wrapper .plan_item:nth-child(1){
+    background-color: #ffbf00;
+    color: white;
+}

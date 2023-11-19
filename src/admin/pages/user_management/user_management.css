@@ -1,0 +1,17 @@
+.UserMangement {
+  padding: 20px;
+  background-color: #f6f8fa;
+  margin-top: 20px;
+}
+.user_management_wrapper {
+  padding: 1px;
+}
+.user_management_wrapper .add_user_form,
+.user__listtable {
+  background-color: transparent;
+  box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 0 10px 0;
+}

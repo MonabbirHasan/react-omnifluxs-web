@@ -1,0 +1,18 @@
+.blogcomment_managements {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #f6f8fa;
+}
+.blogcomment_managements .blog_comments_wrapper {
+  padding: 1px;
+}
+.blogcomment_managements .blog_comments_wrapper .blog_comments_form,
+.blog_comments {
+  padding: 10px;
+  background: transparent;
+  box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+/* .blogcomment_managements .blog_comments_wrapper .blog_comments{} */

@@ -1,0 +1,16 @@
+.bloglike_management{
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #f6f8fa;
+}
+.bloglike_management .bloglike_wrapper{
+    padding: 1px;
+}
+.bloglike_management .bloglike_wrapper .bloglike_form,.bloglike_table{
+    padding: 10px;
+    background-color: transparent;
+    box-shadow: -2px -2px 5px #eee,2px 2px 5px #eee;
+    border: 3px solid #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}

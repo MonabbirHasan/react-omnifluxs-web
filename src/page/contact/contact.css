@@ -1,0 +1,74 @@
+.contactPage {
+    padding: 0;
+    width: 100%;
+}
+
+.contactPage .contact_banner img {
+    width: 100%;
+    height: 90vh;
+}
+
+.contactPage .contact_wrapper {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+}
+.contactPage .maps{
+    padding-bottom: 50px ;
+    padding-top: 25px;
+}
+.contactPage .maps iframe {
+    border: 3px solid #00a2ffe1;
+    border-radius: 5px;
+}
+
+.contactPage .contact_wrapper .contact_left {
+    padding: 30px;
+    box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+    background: #eee;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+}
+
+.contactPage .contact_wrapper .contact_left input {
+    margin: 10px 0;
+}
+
+.contactPage .contact_wrapper .contact_left textarea {
+    text-transform: capitalize;
+}
+
+.contactPage .contact_wrapper .contact_left .submit_btn {
+    padding: 10px 0;
+}
+
+.contactPage .contact_wrapper .contact_right {
+    padding: 10px;
+}
+
+.contactPage .contact_wrapper .contact_right .contact_item {
+    padding: 20px;
+    box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+    background: #eee;
+    border: 3px solid #ffffff;
+    margin: 15px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contactPage .contact_wrapper .contact_right .contact_item:hover{
+    border-color: #fffafa;
+}
+.contactPage .contact_wrapper .contact_right .contact_item span:first-child svg {
+    color: dodgerblue;
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.contactPage .contact_wrapper .contact_right .contact_item span:last-child {
+    padding-left: 10px;
+    text-transform: lowercase;
+    font-weight: 400;
+    font-family: cursive;
+    vertical-align: middle;
+}

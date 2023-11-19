@@ -1,0 +1,115 @@
+.login {
+  width: 100%;
+  height: 100vh;
+  /* background-image: url("../assets/img/background.jpg"); */
+  background-color: #06012a;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.login .login_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.form_box {
+  width: auto;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 65px 55px 54px 55px;
+  text-align: left;
+}
+/* .login .login_wrapper .form_box.login{
+    position: relative;
+    top: 30vh;
+}
+.login .login_wrapper .form_box {
+    background: #fff;
+    padding: 15px;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    width: auto;
+    height:100%;
+    position: relative;
+    top:40px;
+}
+.login .login_wrapper .form_box .logo{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px 0;
+}
+.login .login_wrapper .form_box .logo img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+.login .login_wrapper .form_box input {
+    background: none;
+    border: 2px solid #bbb;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.login .login_wrapper .form_box textarea {
+    background: none;
+    font-size: 14px;
+    resize: none;
+    border: 1px solid #efe;
+}
+
+.login .login_wrapper .form_box .login_btn {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.login .login_wrapper .form_box .login_btn button {
+    letter-spacing: 1px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.login .login_wrapper .form_box .login_btn p {
+    text-transform: capitalize;
+    font-size: 14px;
+    margin: 0;
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+
+.login .login_wrapper .form_box .social {
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.login .login_wrapper .form_box .social button {
+    background: rgba(255, 255, 255, .60);
+    margin-right: 5px;
+    padding: 10px;
+    font-size: 14px!important;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.login .login_wrapper .form_box .social button span {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #333;
+    padding-left: 10px;
+    letter-spacing: 1px;
+}
+
+.login .login_wrapper .form_box .social button svg {
+    color: black;
+    font-size: 14px;
+} */

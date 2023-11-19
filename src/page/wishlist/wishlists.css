@@ -1,0 +1,22 @@
+.wishlists_page {
+  padding: 50px 0;
+  margin-top: 10vh;
+  width: 100%;
+}
+.wishlists_page .wishlists_wrapper {
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+  /* border-radius: 10px; */
+  border: 3px solid #fff;
+}
+.wishlists_page .wishlists_table::-webkit-scrollbar {
+  width: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.wishlists_page .wishlists_table::-webkit-scrollbar-thumb {
+  width: 5px;
+  background-color: #111;
+  border-radius: 5px;
+}

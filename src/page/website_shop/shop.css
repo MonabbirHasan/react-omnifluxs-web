@@ -1,0 +1,68 @@
+.shop_page {
+    padding: 0;
+    width: 100%;
+}
+
+.shop_page .shop_title {
+    padding-top: 30px;
+}
+
+.shop_page .shop_page_banner img {
+    width: 100%;
+    height: 90vh;
+}
+
+.shop_page .paginations {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+.shop_page .shop_wrapper {
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.shop_page .shop_filter {
+    margin-top: 30px;
+    padding: 10px;
+    background: #eee;
+    box-shadow: -2px -2px 2px #eee, 2px 2px 2px #eee;
+    border: 2px solid #ffffff;
+}
+
+.shop_page .shop_filter input {
+    border: none;
+    border-radius: 5px;
+    outline-color: dodgerblue;
+    text-transform: lowercase;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+.shop_page .shop_filter button {
+    border: none !important;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: fantasy;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+.shop_page .shop_filter .search_btn {
+    background-color: black;
+    font-weight: bolder;
+}
+
+.shop_page .shop_filter button:hover {
+    background: black;
+}
+
+.shop_page .shop_filter button.active {
+    background: black;
+    color: #fff;
+}

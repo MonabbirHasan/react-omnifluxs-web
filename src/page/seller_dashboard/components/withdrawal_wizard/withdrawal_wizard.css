@@ -1,0 +1,28 @@
+.withdrawal_wizard {
+  padding: 30px;
+  background: #f5f5f5;
+}
+.phoneVerification {
+  border: none !important;
+}
+.phoneVerification .vi__character.character {
+  border: none;
+  background-color: #eee;
+  border-radius: 30px;
+  border: 2px solid #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  font-size: 20px;
+  border-radius: 8px;
+ 
+  /* light theme */
+  color: #eee;
+  background-color: #f6f5fa;
+  box-shadow: 0 2px 0 #e4e2f5;
+ 
+  /* dark theme */
+  color: #fff;
+  background-color: #bbb;
+  box-shadow: 0 2px 0 #eee;
+}

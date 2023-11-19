@@ -1,0 +1,29 @@
+.share_component {
+    padding: 10px;
+}
+
+.share_modals {
+    background: #0000002e;
+}
+
+.modal_body {
+    background: #eee;
+    border: 3px solid #fff;
+}
+
+.share_component .Share_slider_item {
+    padding: 0;
+    margin: 0;
+}
+
+.react-multi-carousel-item #Share_slider_item svg {
+    font-size: 3rem;
+    color: #111;
+    background: #eee;
+    background: linear-gradient(to left, #27fc27, #ffbf00);
+    padding: 5px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: -3px -3px 5px #eee, 3px 3px 5px #eee;
+    border: 3px solid #fff;
+}

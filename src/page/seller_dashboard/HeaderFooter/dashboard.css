@@ -1,0 +1,117 @@
+/* drawer_sidebar */
+.drawer_sidebar {
+    padding: 5px;
+}
+
+.dashboard_page {
+    background-color: #EDEFF6;
+}
+
+.drawerHeader {
+    /* background: #eee; */
+    /* box-shadow: -2px -2px 2px #eee, 2px 2px 2px #eee; */
+    border: 2px solid #ffffff;
+    padding: 5px;
+}
+
+.drawerHeader span {
+    text-transform: capitalize;
+    padding: 10px 0;
+    display: block;
+    font-family: cursive;
+}
+
+.drawerHeader .dashboard_author_img {
+    border-radius: 5px;
+    width: 100%;
+    height: 160px;
+    vertical-align: middle;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+
+.drawerHeader .close_btn {
+    float: right;
+    background-color: #ffffff;
+    color: red;
+    font-weight: bolder;
+}
+
+.drawerHeader .sidebarLogo {
+    display: flex;
+    vertical-align: middle;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.drawerHeader .sidebarLogo h3 {
+    font-size: 20px;
+    vertical-align: middle;
+    margin-top: 5px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.drawerHeader .sidebarLogo h3 a {
+    text-transform: capitalize;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    font-family: sans-serif !important;
+}
+
+.drawerHeader .sidebarLogo h3 a p {
+    color: #2196f3;
+    margin: 0;
+    padding: 0;
+    margin-left: 2px;
+}
+
+.css-4t3x6l-MuiPaper-root-MuiDrawer-paper::-webkit-scrollbar {
+    width: 0;
+}
+
+.css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
+    /* background: transparent !important; */
+    backdrop-filter: blur(20px);
+    border: 2px solid #ffffff !important;
+}
+
+.css-4t3x6l-MuiPaper-root-MuiDrawer-paper .css-h4y409-MuiList-root {
+    background-color: transparent !important;
+    backdrop-filter: blur(20px);
+}
+
+.css-4t3x6l-MuiPaper-root-MuiDrawer-paper ul li {
+    text-transform: capitalize;
+    font-size: 2rem !important;
+}
+
+.css-4t3x6l-MuiPaper-root-MuiDrawer-paper ul li .css-10hburv-MuiTypography-root {
+    font-size: 14px;
+    color: #111;
+    font-family: cursive;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+/* Dashboard header style start here */
+.saller_dashboard_header {
+    padding: 5px 0;
+}
+
+.saller_dashboard_header .admin_message_box::-webkit-scrollbar {
+    width: 0;
+}
+
+.saller_dashboard_header .top_right_icons {
+    padding-right: 30px;
+}
+
+.saller_dashboard_header .top_right_icons span {
+    margin: 0 5px;
+}

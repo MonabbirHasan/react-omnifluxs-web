@@ -1,0 +1,17 @@
+.contact_management{
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f6f8fa;
+}
+.contact_management .contact_management_wrapper{
+    padding: 1px;
+}
+.contact_management .contact_management_wrapper .contact_management_table{
+    padding: 10px;
+    background-color: transparent;
+    box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+

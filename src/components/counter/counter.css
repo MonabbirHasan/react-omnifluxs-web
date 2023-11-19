@@ -1,0 +1,33 @@
+.counter {
+    padding: 5px;
+    display: grid;
+    background-color: #fff;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+}
+
+.counter .count_item {
+    padding: 10px;
+    /* background: linear-gradient(to right, #eff0f2, #fefefe); */
+    background: linear-gradient(40deg, #f0f, #0066ff);
+    box-shadow: 5px 0 8px rgba(0, 0, 0, 0.2);
+    border: 3px solid #fff;
+    text-align: center;
+    margin: 0 10px;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+.counter .count_item h3 {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
+}
+
+.counter .count_item p {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}

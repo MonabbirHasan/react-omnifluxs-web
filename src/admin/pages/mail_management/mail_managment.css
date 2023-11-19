@@ -1,0 +1,51 @@
+.mail_managment {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f6f8fa;
+}
+.mail_managment .mail_managment_wrapper {
+  padding: 1px;
+}
+.mail_managment .mail_managment_wrapper .mail_managment_sidebar {
+  padding: 10px;
+  background-color: transparent;
+  box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.mail_managment .mail_managment_wrapper .mail_managment_list {
+  background-color: #f6f8fa;
+  padding: 10px;
+}
+.ql-toolbar.ql-snow + .ql-container.ql-snow {
+  /* height: 250px !important; */
+  height: auto;
+  border: none;
+  border: 1px solid #eee !important;
+  border-radius: 10px !important;
+}
+.ql-toolbar {
+  border: none !important;
+  border: 3px solid #eee !important;
+  border-radius: 10px !important;
+}
+.mail_inbox {
+  padding: 10px;
+  background-color: transparent;
+  box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  height: 470px;
+  overflow-y: scroll;
+}
+.mail_inbox::-webkit-scrollbar {
+  width: 5px;
+  background-color: #eee;
+}
+.mail_inbox::-webkit-scrollbar-thumb {
+  background-color: #111;
+  width: 5px;
+  border-radius: 5px;
+}

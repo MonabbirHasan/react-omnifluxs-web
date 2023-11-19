@@ -1,0 +1,85 @@
+.yt_shop_page .yt_wrapper .package_card {
+    padding: 20px;
+    background: #eee;
+    box-shadow: -2px -2px 2px #eee, 2px 2px 2px #eee;
+    border: 3px solid #ffffff;
+    display: inline-block;
+    width: 320px;
+    margin: 10px 0;
+}
+
+.yt_shop_page .yt_wrapper .package_card ul {
+    /* background-color: #fff; */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.yt_shop_page .yt_wrapper .package_card ul li {
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    padding: 2px 0;
+    font-family: sans-serif;
+}
+
+.yt_shop_page .yt_wrapper .package_card .details {
+    background-color: rgb(19, 113, 201);
+    padding: 16px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.yt_shop_page .yt_wrapper .package_card h6 {
+    font-weight: normal;
+    font-size: 3rem;
+    margin: 0;
+    font-family: monospace;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.yt_shop_page .yt_wrapper .package_card p {
+    margin: 0;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.yt_shop_page .yt_wrapper .package_card .price {
+    font-size: 1.5rem;
+    padding: 5px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.yt_shop_page .yt_wrapper .package_card .yt_shop_btn {
+    display: grid;
+    grid-template-columns: 20% 20% 60%;
+    gap: 5px;
+}
+
+.yt_shop_page .yt_wrapper .package_card .yt_shop_btn button:nth-child(1) {
+    color: white;
+    background: black;
+}
+
+.yt_shop_page .yt_wrapper .package_card .yt_shop_btn button:nth-child(2) {
+    color: white;
+    background: black;
+}
+
+.yt_shop_page .yt_wrapper .package_card .yt_shop_btn button {
+    padding: 5px;
+    border-radius: 0;
+    font-size: 14px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border-color: #ffffff;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+}
