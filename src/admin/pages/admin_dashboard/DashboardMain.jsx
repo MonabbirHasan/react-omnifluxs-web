@@ -331,6 +331,28 @@ const DashboardMain = () => {
           </Col>
           <Col sm={12} md={6} lg={6}>
             <div className="radial_charts">
+              <Box
+                sx={{
+                  justifyContent: "center",
+                  alignItems: "center",
+                  display: "flex",
+                }}
+              >
+                <Typography
+                  textAlign={"center"}
+                  sx={{
+                    border: "2px solid #fff",
+                    display: "inline-block",
+                    padding: "5px",
+                    borderRadius: "5px",
+                    color:'#919191',
+                    boxShadow:
+                      "inset -3px -3px 5px #eee,inset 3px 3px 5px #eee",
+                  }}
+                >
+                  {newtime}
+                </Typography>
+              </Box>
               <Row>
                 <Col sm={12} md={6} lg={6}>
                   <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -343,7 +365,7 @@ const DashboardMain = () => {
                       width: "280px",
                       height: "auto",
                       padding: "10px",
-                      borderRadius:20,
+                      borderRadius: 20,
                     }}
                     src="https://i.pinimg.com/736x/54/a9/0a/54a90a9ce7bfd8c0de99914d85a3ea4e.jpg"
                   />

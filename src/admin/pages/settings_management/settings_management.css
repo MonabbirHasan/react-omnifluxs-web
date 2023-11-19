@@ -1,0 +1,25 @@
+.settings_management {
+  padding: 20px;
+  background-color: #f6f8fa;
+  margin-top: 20px;
+}
+.settings_management .settings_management_wrapper {
+  padding: 0;
+}
+.settings_management .settings_management_grid {
+  /* background-color: transparent;
+    box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+    border: 3px solid #fff;
+    border-radius: 5px; */
+  padding: 20px;
+  margin: 0 0 10px 0;
+}
+.settings_management .settings_management_grid .setting_grid_items {
+  padding: 15px;
+  background-color: transparent;
+  box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  margin: 5px 0;
+  height: 115px;
+}

@@ -9,6 +9,7 @@ export { default as CommunityMangement } from "./community_management/CommunityM
 export { default as BlogLikeManagement } from "./bloglike_management/BlogLikeManagement";
 export { default as ReferrMangement } from "./referredTeam_management/ReferrMangement";
 export { default as IpBlocManagement } from "./ip_block_management/IpBlocManagement";
+export { default as SettingMangement } from "./settings_management/SettingMangement";
 export { default as ReviewManagement } from "./reviews_management/ReviewManagement";
 export { default as ContactMangement } from "./contact_management/ContactMangement";
 export { default as MessageMangement } from "./message_management/MessageMangement";

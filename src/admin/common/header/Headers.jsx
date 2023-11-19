@@ -19,15 +19,15 @@ const Headers = () => {
         <Typography></Typography>
         <Box>
           {/*NOTIFICATION ICON*/}
-          <IconButton>
+          <IconButton onClick={()=>{}}>
             <Notifications />
           </IconButton>
            {/*MESSAGE ICON*/}
-          <IconButton>
+          <IconButton onClick={()=>{}}>
             <Message />
           </IconButton>
            {/*PROFILE ICON*/}
-          <IconButton>
+          <IconButton onClick={()=>{}}>
             <Avatar src="https://cdn.pixabay.com/photo/2023/03/24/14/23/ai-generated-7874140_1280.jpg" />
           </IconButton>
         </Box>

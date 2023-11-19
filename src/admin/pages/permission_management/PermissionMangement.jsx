@@ -33,7 +33,7 @@ import {
   MenuItem,
   Select,
   InputLabel,
-  Switch
+  Switch,
 } from "@mui/material";
 import {
   Attachment,
@@ -43,10 +43,13 @@ import {
   Photo,
   Send,
 } from "@mui/icons-material";
+import Parmission_switch from "./Parmission_switch"
 const PermissionMangement = () => {
+  const [client_permission_all, setClient_permission_all] = useState(false);
   const FontStyle = {
-    textTransform: "uppercase",
-    fontWeight: "800",
+    textTransform: "capitalize",
+    fontWeight: "200",
+    fontSize: "14px",
   };
   const perimssion_items = {
     padding: "10px",
@@ -59,9 +62,9 @@ const PermissionMangement = () => {
   };
   const [full_permission, setFullPermission] = useState(false);
   function generateRandomHexColor() {
-    // Generate a random hexadecimal color code
     return "#" + Math.floor(Math.random() * 16777215).toString(16);
   }
+
   return (
     <div className="parmission_management">
       <Container>
@@ -122,249 +125,428 @@ const PermissionMangement = () => {
             </Box>
             <Row>
               <Col sm={12} md={12} lg={6}>
-                <Stack style={perimssion_items} direction={"row"}>
+                <Stack style={perimssion_items}>
                   <Typography mt={1} pr={2} textTransform={"capitalize"}>
                     clients
                   </Typography>
-                  <FormControlLabel
-                    sx={FontStyle}
-                    control={<Switch checked={full_permission} />}
-                    label="all"
-                  />
-                  <FormControlLabel
-                    control={
-                      <Switch checked={full_permission} color="warning" />
-                    }
-                    sx={FontStyle}
-                    label="index"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} color="error" />}
-                    sx={FontStyle}
-                    label="create"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} color="info" />}
-                    sx={FontStyle}
-                    label="edit"
-                  />
-                  <FormControlLabel
-                    control={
-                      <Switch checked={full_permission} color="default" />
-                    }
-                    sx={FontStyle}
-                    label="destroy"
-                  />
+                  <Box display={"flex"} gap={3}>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="all"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="index"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="create"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="edit"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="destroy"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                  </Box>
+                </Stack>
+                {/*TEAM PERMISSION START HERE*/}
+                <Stack style={perimssion_items} direction={"row"}>
+                  <Typography mt={1} pr={2} textTransform={"capitalize"}>
+                    pages
+                  </Typography>
+                  <Box display={"flex"} gap={3}>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="all"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="index"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="create"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="edit"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="destroy"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                  </Box>
                 </Stack>
                 <Stack style={perimssion_items} direction={"row"}>
                   <Typography mt={1} pr={2} textTransform={"capitalize"}>
                     teams
                   </Typography>
-                  <FormControlLabel
-                    sx={FontStyle}
-                    control={<Switch checked={full_permission} />}
-                    label="all"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="index"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="create"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="edit"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="destroy"
-                  />
-                </Stack>
-                <Stack style={perimssion_items} direction={"row"}>
-                  <Typography mt={1} pr={2} textTransform={"capitalize"}>
-                    community
-                  </Typography>
-                  <FormControlLabel
-                    sx={FontStyle}
-                    control={<Switch checked={full_permission} />}
-                    label="all"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="index"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="create"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="edit"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="destroy"
-                  />
+
+                  <Box display={"flex"} gap={3}>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="all"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="index"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="create"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="edit"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="destroy"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                  </Box>
                 </Stack>
                 <Stack style={perimssion_items} direction={"row"}>
                   <Typography mt={1} pr={2} textTransform={"capitalize"}>
                     contact us
                   </Typography>
-                  <FormControlLabel
-                    sx={FontStyle}
-                    control={<Switch checked={full_permission} />}
-                    label="all"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="index"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="create"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="edit"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="destroy"
-                  />
+
+                  <Box display={"flex"} gap={3}>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="all"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="index"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="create"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="edit"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="destroy"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                  </Box>
                 </Stack>
                 <Stack style={perimssion_items} direction={"row"}>
                   <Typography mt={1} pr={2} textTransform={"capitalize"}>
                     course
                   </Typography>
-                  <FormControlLabel
-                    sx={FontStyle}
-                    control={<Switch checked={full_permission} />}
-                    label="all"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="index"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="create"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="edit"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="destroy"
-                  />
+
+                  <Box display={"flex"} gap={3}>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="all"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="index"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="create"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="edit"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="destroy"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                  </Box>
                 </Stack>
                 <Stack style={perimssion_items} direction={"row"}>
                   <Typography mt={1} pr={2} textTransform={"capitalize"}>
                     payments
                   </Typography>
-                  <FormControlLabel
-                    sx={FontStyle}
-                    control={<Switch checked={full_permission} />}
-                    label="all"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="index"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="create"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="edit"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="destroy"
-                  />
+
+                  <Box display={"flex"} gap={3}>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="all"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="index"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="create"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="edit"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="destroy"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                  </Box>
                 </Stack>
                 <Stack style={perimssion_items} direction={"row"}>
                   <Typography mt={1} pr={2} textTransform={"capitalize"}>
                     settings
                   </Typography>
-                  <FormControlLabel
-                    sx={FontStyle}
-                    control={<Switch checked={full_permission} />}
-                    label="all"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="index"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="create"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="edit"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="destroy"
-                  />
+
+                  <Box display={"flex"} gap={3}>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="all"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="index"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="create"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="edit"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="destroy"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                  </Box>
                 </Stack>
                 <Stack style={perimssion_items} direction={"row"}>
                   <Typography mt={1} pr={2} textTransform={"capitalize"}>
                     blogs
                   </Typography>
-                  <FormControlLabel
-                    sx={FontStyle}
-                    control={<Switch checked={full_permission} />}
-                    label="all"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="index"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="create"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="edit"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="destroy"
-                  />
+
+                  <Box display={"flex"} gap={3}>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="all"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="index"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="create"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="edit"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="destroy"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                  </Box>
                 </Stack>
               </Col>
               <Col sm={12} md={12} lg={6}>
@@ -372,241 +554,425 @@ const PermissionMangement = () => {
                   <Typography mt={1} pr={2} textTransform={"capitalize"}>
                     <sup>sRequest</sup>
                   </Typography>
-                  <FormControlLabel
-                    sx={FontStyle}
-                    control={<Switch checked={full_permission} />}
-                    label="all"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="index"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="create"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="edit"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="destroy"
-                  />
+
+                  <Box display={"flex"} gap={3}>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="all"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="index"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="create"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="edit"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="destroy"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                  </Box>
                 </Stack>
                 <Stack style={perimssion_items} direction={"row"}>
                   <Typography mt={1} pr={2} textTransform={"capitalize"}>
                     Users{" "}
                   </Typography>
-                  <FormControlLabel
-                    sx={FontStyle}
-                    control={<Switch checked={full_permission} />}
-                    label="all"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="index"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="create"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="edit"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="destroy"
-                  />
+
+                  <Box display={"flex"} gap={3}>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="all"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="index"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="create"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="edit"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="destroy"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                  </Box>
                 </Stack>
                 <Stack style={perimssion_items} direction={"row"}>
                   <Typography mt={1} pr={2} textTransform={"capitalize"}>
                     Roles{" "}
                   </Typography>
-                  <FormControlLabel
-                    sx={FontStyle}
-                    control={<Switch checked={full_permission} />}
-                    label="all"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="index"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="create"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="edit"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="destroy"
-                  />
+
+                  <Box display={"flex"} gap={3}>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="all"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="index"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="create"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="edit"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="destroy"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                  </Box>
                 </Stack>
                 <Stack style={perimssion_items} direction={"row"}>
                   <Typography mt={1} pr={2} textTransform={"capitalize"}>
                     product{" "}
                   </Typography>
-                  <FormControlLabel
-                    sx={FontStyle}
-                    control={<Switch checked={full_permission} />}
-                    label="all"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="index"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="create"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="edit"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="destroy"
-                  />
+
+                  <Box display={"flex"} gap={3}>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="all"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="index"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="create"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="edit"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="destroy"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                  </Box>
                 </Stack>
                 <Stack style={perimssion_items} direction={"row"}>
                   <Typography mt={1} pr={2} textTransform={"capitalize"}>
                     category
                   </Typography>
-                  <FormControlLabel
-                    sx={FontStyle}
-                    control={<Switch checked={full_permission} />}
-                    label="all"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="index"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="create"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="edit"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="destroy"
-                  />
+
+                  <Box display={"flex"} gap={3}>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="all"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="index"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="create"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="edit"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="destroy"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                  </Box>
                 </Stack>
                 <Stack style={perimssion_items} direction={"row"}>
                   <Typography mt={1} pr={2} textTransform={"capitalize"}>
                     orders
                   </Typography>
-                  <FormControlLabel
-                    sx={FontStyle}
-                    control={<Switch checked={full_permission} />}
-                    label="all"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="index"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="create"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="edit"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="destroy"
-                  />
+
+                  <Box display={"flex"} gap={3}>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="all"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="index"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="create"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="edit"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="destroy"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                  </Box>
                 </Stack>
                 <Stack style={perimssion_items} direction={"row"}>
                   <Typography mt={1} pr={2} textTransform={"capitalize"}>
                     mail
                   </Typography>
-                  <FormControlLabel
-                    sx={FontStyle}
-                    control={<Switch checked={full_permission} />}
-                    label="all"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="index"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="create"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="edit"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="destroy"
-                  />
+
+                  <Box display={"flex"} gap={3}>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="all"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="index"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="create"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="edit"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="destroy"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                  </Box>
                 </Stack>
                 <Stack style={perimssion_items} direction={"row"}>
                   <Typography mt={1} pr={2} textTransform={"capitalize"}>
                     message
                   </Typography>
-                  <FormControlLabel
-                    sx={FontStyle}
-                    control={<Switch checked={full_permission} />}
-                    label="all"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="index"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="create"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="edit"
-                  />
-                  <FormControlLabel
-                    control={<Switch checked={full_permission} />}
-                    sx={FontStyle}
-                    label="destroy"
-                  />
+
+                  <Box display={"flex"} gap={3}>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="all"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="index"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="create"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="edit"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                    <Form>
+                      <Form.Check
+                        type="switch"
+                        id="custom-switch"
+                        label="destroy"
+                        style={{ textTransform: "capitalize" }}
+                        checked={false}
+                      />
+                    </Form>
+                  </Box>
                 </Stack>
               </Col>
             </Row>

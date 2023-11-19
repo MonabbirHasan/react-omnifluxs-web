@@ -46,6 +46,8 @@ import {
   RequestPage,
   Reviews,
   Settings,
+  SettingsAccessibility,
+  SettingsApplications,
   Telegram,
   ThumbUpAlt,
   Twitter,
@@ -81,6 +83,7 @@ import {
   PermissionMangement,
   IpBlocManagement,
   MenuTabs,
+  SettingMangement,
 } from "../../pages";
 import Headers from "../../common/header/Headers";
 const AdminDashboard = () => {
@@ -180,6 +183,8 @@ const AdminDashboard = () => {
             <IpBlocManagement />
           ) : pages === "social_service" ? (
             <MenuTabs />
+          ) : pages === "all_settings" ? (
+            <SettingMangement />
           ) : (
             "page not found!"
           )}
@@ -829,12 +834,17 @@ const AdminDashboard = () => {
                 </ListItemButton>
               </ListItem>
               <ListItem>
-                <ListItemButton>
+                <ListItemButton
+                  onClick={() => {
+                    setPages("all_settings");
+                    Store_State("all_settings");
+                  }}
+                >
                   <Typography pr={1}>
-                    <Web htmlColor="black" />
+                    <Settings htmlColor="black" />
                   </Typography>
                   <Typography style={sidebar_menu_item_style}>
-                    show/hide management
+                    All Settings
                   </Typography>
                 </ListItemButton>
               </ListItem>
