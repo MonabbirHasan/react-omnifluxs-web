@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { FeatureCard, Statistics } from "../../components/";
 import { Col, Form, InputGroup, Row } from "react-bootstrap";
 import "./admin_dashboard.css";
@@ -283,6 +283,14 @@ const DashboardMain = () => {
         <Row>
           <Col sm={12} md={6} lg={6}>
             <div className="device_table">
+              <Typography
+                textTransform={"capitalize"}
+                py={2}
+                fontWeight={"600"}
+                color={"#919191"}
+              >
+                active device
+              </Typography>
               <TableContainer
                 className="device_data_table"
                 component={Paper}
@@ -345,7 +353,7 @@ const DashboardMain = () => {
                     display: "inline-block",
                     padding: "5px",
                     borderRadius: "5px",
-                    color:'#919191',
+                    color: "#919191",
                     boxShadow:
                       "inset -3px -3px 5px #eee,inset 3px 3px 5px #eee",
                   }}

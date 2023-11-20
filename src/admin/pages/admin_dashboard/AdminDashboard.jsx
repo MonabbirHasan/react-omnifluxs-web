@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./admin_dashboard.css";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import {
@@ -84,6 +84,7 @@ import {
   IpBlocManagement,
   MenuTabs,
   SettingMangement,
+  AdminProfile,
 } from "../../pages";
 import Headers from "../../common/header/Headers";
 const AdminDashboard = () => {
@@ -119,12 +120,18 @@ const AdminDashboard = () => {
   useEffect(() => {
     setPages(JSON.parse(localStorage.getItem("state_pages")));
   }, []);
-
+  /*************************************************
+   * UDPATE PAGE ROUTE STATES FROM HEADER TO ADMIN
+   *************************************************/
+  const updates = () => {
+    setPages("admin_profile");
+    Store_State("admin_profile");
+  };
   return (
     <>
       <div className="admin_dashboard">
         <div className="admin_header">
-          <Headers />
+          <Headers updates={updates} />
           <Box>
             <IconButton onClick={handleShow}>
               <Apps htmlColor="black" />
@@ -185,6 +192,8 @@ const AdminDashboard = () => {
             <MenuTabs />
           ) : pages === "all_settings" ? (
             <SettingMangement />
+          ) : pages === "admin_profile" ? (
+            <AdminProfile />
           ) : (
             "page not found!"
           )}

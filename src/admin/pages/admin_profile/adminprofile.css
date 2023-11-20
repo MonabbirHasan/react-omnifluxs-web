@@ -1,0 +1,34 @@
+.adminprofile {
+  padding: 10px;
+}
+.adminprofile .admin_image_gallery {
+  background-color: transparent;
+  box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+  border: 3px solid #fff;
+  margin-top: 10px;
+}
+/* admin_folder_file */
+.adminprofile .admin_folder_file {
+  margin-top: 10px;
+  padding: 20px 0;
+}
+.adminprofile .admin_folder_file .foder_file_filter {
+  padding: 15px;
+}
+.adminprofile .admin_folder_file .foder_file_filter select {
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+  border: 3px solid #fff;
+  margin-top: 10px;
+  margin: 5px;
+}
+.adminprofile .admin_folder_file .foder_file_filter input {
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+  border: 3px solid #fff;
+  margin-top: 10px;
+}

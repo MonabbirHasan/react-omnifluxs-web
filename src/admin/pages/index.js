@@ -24,3 +24,4 @@ export { default as MailMangement } from "./mail_management/MailMangement";
 export { default as DashboardMain } from "./admin_dashboard/DashboardMain";
 export { default as TeamMangement } from "./team_management/TeamMangement";
 export { default as MenuTabs } from "./social_prd_management/MenuTabs";
+export { default as AdminProfile } from "./admin_profile/AdminProfile";
