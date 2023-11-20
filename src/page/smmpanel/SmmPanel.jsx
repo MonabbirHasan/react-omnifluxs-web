@@ -489,7 +489,11 @@ const SmmPanel = () => {
                     label="YES, I HAVE CONFIRMED THE ORDER!"
                   />
                   <div className="mt-3">
-                    <Button variant="contained" onClick={handleOrderSubmit}>
+                    <Button
+                      sx={{ textTransform: "capitalize" }}
+                      variant="contained"
+                      onClick={handleOrderSubmit}
+                    >
                       place order
                     </Button>
                   </div>
@@ -517,7 +521,12 @@ const SmmPanel = () => {
                     label="YES, I HAVE CONFIRMED THE ORDER!"
                   />
                   <div className="mt-3">
-                    <Button variant="contained">place order</Button>
+                    <Button
+                      variant="contained"
+                      sx={{ textTransform: "capitalize" }}
+                    >
+                      place order
+                    </Button>
                   </div>
                 </div>
               </Tab>

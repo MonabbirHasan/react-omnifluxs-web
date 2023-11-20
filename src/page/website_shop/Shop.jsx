@@ -14,6 +14,7 @@ import { Button } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import Alert from '@mui/material/Alert';
 import "./shop.css";
+import { shopData } from '../../utils/static/shopData';
 const Shop = () => {
   let [Filter_GoogleAdsVerified, setGoogleAdsVerified] = useState("");
   let [Filter_DomainHosting, setDomainHosting] = useState("");
@@ -181,35 +182,18 @@ const Shop = () => {
           </div>
           <div className="shop_wrapper">
             {
-              Data_Loader == true ?
-                <>
-                  <div style={{
-                    justifyContent: "center",
-                    display: 'flex',
-                    alignItems: "center"
-                  }} className="loading">
-                    <RingLoader
-                      data-testid="loader"
-                      aria-label="Loading Spinner"
-                      size={150}
-                      color="green"
-                      loading={Data_Loader}
-                    />
-                  </div>
-                </>
-                :
-                WebsiteData.length > 0 ? WebsiteData.map((item) => (
-                  <ShopCard
-                    key={item.id}
-                    title={item.website_title}
-                    price={item.website_price}
+              shopData.map((items)=>(
+                <ShopCard
+                    key={items.id}
+                    title="Blog Website"
+                    price={items.price}
                     company={"own company"}
-                    status={item.is_sold}
-                    ImgPath={imgurl}
-                    gallery={returnImg(item.website_thumnail)}
+                    status="Yes"
+                    // ImgPath={imgurl}
+                    gallery={items.gallery}
                     rating={3.5}
                   />
-                )) : <Alert severity="success" color="success">Data Not Found!</Alert>
+              ))
             }
           </div>
         </div>

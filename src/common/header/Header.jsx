@@ -62,9 +62,9 @@ const Header = () => {
                 <NavDropdown.Item eventKey="4.4">
                   <NavLink to={"/courses"}>Our Course</NavLink>
                 </NavDropdown.Item>
-                <NavDropdown.Item eventKey="4.5">
+                {/* <NavDropdown.Item eventKey="4.5">
                   <NavLink to={"/web-order"}>Custom Order</NavLink>
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
               </NavDropdown>
               <Nav.Link hidden>
                 <NavLink to={"/pricing"}>pricing</NavLink>

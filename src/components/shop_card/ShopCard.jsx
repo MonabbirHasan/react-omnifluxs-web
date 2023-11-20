@@ -47,7 +47,7 @@ const ShopCard = ({ gallery, title, company, price, rating, status, ImgPath }) =
               {
                 gallery.map((imageUrl, index) => (
                   <div key={imageUrl.id}>
-                    <LazyLoadImage src={ImgPath + "/" + imageUrl} />
+                    <LazyLoadImage width={"100%"} src={imageUrl.img} />
                   </div>
                 ))
               }

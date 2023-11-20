@@ -24,7 +24,7 @@ import graphics_design from "../../assets/img/graphics-design.svg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import programmingimg from "../../assets/img/programming.svg";
 import PageTitle from "../../components/Page_title/PageTitle";
-import CLIENT_REVIEWS from "../../utils/api/client_review";
+
 import businessimg from "../../assets/img/business.svg";
 import Cards from "../../components/product-card/Cards";
 import Adds from "../../components/advertisement/Adds";
@@ -121,58 +121,58 @@ const Home = () => {
   /************************************************
    * YOUTUBE CHANNEL API START HERE
    * **********************************************/
-  useEffect(() => {
-    setLoader(true);
-    fetch("http://127.0.0.1:8000/api/access/youtube_channel", {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        setLoader(false);
-        setImgurl(data.imageUrl);
-        setYOUTUBE_CHANNEL_DATA(data.data);
-        // console.log(data.data)
-      })
-      .catch((error) => {
-        console.error(error);
-        setLoader(false); // Turn off loading on error
-      });
-  }, []);
+  // useEffect(() => {
+  //   setLoader(true);
+  //   fetch("http://127.0.0.1:8000/api/access/youtube_channel", {
+  //     method: "GET",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //   })
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       setLoader(false);
+  //       setImgurl(data.imageUrl);
+  //       setYOUTUBE_CHANNEL_DATA(data.data);
+  //       // console.log(data.data)
+  //     })
+  //     .catch((error) => {
+  //       console.error(error);
+  //       setLoader(false); // Turn off loading on error
+  //     });
+  // }, []);
   /************************************************
    * CLIENT REVIEW API CALL START HERE
    * **********************************************/
-  const CLIENT_REVIEW = new CLIENT_REVIEWS(
-    "http://127.0.0.1:8000/api/access/client_review"
-  );
-  CLIENT_REVIEW.get_client_review().then((data) => {
-    setCLIENT_REVIEW_DATA(data.data);
-  });
-  /************************************************
-   * CIRCULAR PORGRESS IN ADMIN CODE START HERE
-   * **********************************************/
-  let [open, setOpen] = useState(true);
-  const handleClose = () => {
-    setOpen(false);
-  };
-  setTimeout(() => {
-    setOpen(false);
-  }, 4000);
+  // const CLIENT_REVIEW = new CLIENT_REVIEWS(
+  //   "http://127.0.0.1:8000/api/access/client_review"
+  // );
+  // CLIENT_REVIEW.get_client_review().then((data) => {
+  //   setCLIENT_REVIEW_DATA(data.data);
+  // });
+  // /************************************************
+  //  * CIRCULAR PORGRESS IN ADMIN CODE START HERE
+  //  * **********************************************/
+  // let [open, setOpen] = useState(true);
+  // const handleClose = () => {
+  //   setOpen(false);
+  // };
+  // setTimeout(() => {
+  //   setOpen(false);
+  // }, 4000);
   /**********************************************
    * CIRCULAR PORGRESS IN ADMIN CODE END HERE
    ***********************************************/
   return (
     <>
       <div style={{ zIndex: "10000" }}>
-        <Backdrop
+        {/* <Backdrop
           sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
           open={open}
           onClick={handleClose}
         >
           <CircularProgress color="inherit" />
-        </Backdrop>
+        </Backdrop> */}
       </div>
       <section className="homepage">
         <Header />
@@ -659,7 +659,6 @@ const Home = () => {
           <Secure />
           {/* secure section end here */}
           {/* LatestBlogs section start here */}
-
           {/* LatestBlogs section end here */}
         </Container>
       </section>

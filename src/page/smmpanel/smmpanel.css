@@ -1,7 +1,7 @@
 .yt_shop_page {
   padding: 60px 0;
   width: 100%;
-  background:#fff;
+  background: #fff;
 }
 
 .yt_shop_page .yt_shop_banner img {
@@ -14,21 +14,20 @@
   width: 100%;
   margin-top: 30px;
   text-align: center;
-  background: #eee;
+  /* background: #eee;
   box-shadow: -2px -2px 3px #eee, 2px 2px 3px #eee;
-  border: 3px solid #fff;
+  border: 3px solid #fff; */
   border-radius: 10px;
 }
 
 .yt_shop_page .yt_wrapper .smm_panel {
   padding: 20px;
-  background: #fff;
-  box-shadow:inset -2px -2px 3px #eee,inset 2px 2px 3px #eee;
+  background: #eee;
+  box-shadow: -2px -2px 3px #eee, 2px 2px 3px #eee;
   border: 3px solid #fff;
   border-radius: 10px;
   display: inline-block;
   text-align: left;
-  /* width: 100%; */
 }
 .yt_shop_page .yt_wrapper .smm_page_title {
   padding: 5px;
