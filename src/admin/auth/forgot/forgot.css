@@ -1,0 +1,18 @@
+.forgot {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #fd7d13;
+}
+.forgot .forgot_wrapper {
+  display: inline-block;
+  padding: 20px;
+  background-color: #eee;
+  box-shadow: -2px -2px 5px #444, 2px 2px 5px #444;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  text-align: center;
+}
