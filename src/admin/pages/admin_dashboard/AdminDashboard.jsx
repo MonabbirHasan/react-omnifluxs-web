@@ -87,6 +87,7 @@ import {
   AdminProfile,
 } from "../../pages";
 import Headers from "../../common/header/Headers";
+import AdminChats from "../admin_chats/AdminChats";
 const AdminDashboard = () => {
   const navigate = useNavigate();
   const [show, setShow] = useState(false);
@@ -127,11 +128,15 @@ const AdminDashboard = () => {
     setPages("admin_profile");
     Store_State("admin_profile");
   };
+  const redirectChatPage = () => {
+    setPages("admin_message");
+    Store_State("admin_message");
+  };
   return (
     <>
       <div className="admin_dashboard">
         <div className="admin_header">
-          <Headers updates={updates} />
+          <Headers updates={updates} redirectChatPage={redirectChatPage} />
           <Box>
             <IconButton onClick={handleShow}>
               <Apps htmlColor="black" />
@@ -194,6 +199,8 @@ const AdminDashboard = () => {
             <SettingMangement />
           ) : pages === "admin_profile" ? (
             <AdminProfile />
+          ) : pages === "admin_message" ? (
+            <AdminChats />
           ) : (
             "page not found!"
           )}

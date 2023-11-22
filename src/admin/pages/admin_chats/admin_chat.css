@@ -1,0 +1,51 @@
+.admin_chat {
+  padding: 20px 0;
+}
+.admin_chat .admin_chat_wrapper {
+  padding: 1px;
+}
+.admin_chat .admin_chat_wrapper .chat_lists {
+  background-color: transparent;
+  box-shadow: -1px -1px 5px #eee, 1px 1px 5px #eee;
+  border-right: 3px solid #fff;
+  padding: 15px;
+  border-radius: 5px;
+  height: 77%;
+  overflow-y: scroll;
+}
+.admin_chat .admin_chat_wrapper .chat_lists::-webkit-scrollbar {
+  width: 6px;
+  background-color: #eee;
+}
+.admin_chat .admin_chat_wrapper .chat_lists::-webkit-scrollbar-thumb {
+  background-color: #1fc345fc;
+  border-radius: 5px;
+}
+.admin_chat .admin_chat_wrapper .chat_board {
+  padding: 10px;
+  /* background-color: #eee; */
+  border-radius: 5px;
+  background-color: transparent;
+  border-left: 3px solid #fff;
+}
+.admin_chat .admin_chat_wrapper .chat_board .chate_header {
+  background-color: transparent;
+  box-shadow: -1px -1px 5px #eee, 1px 1px 5px #eee;
+  border-bottom: 3px solid #fff;
+  padding: 15px;
+}
+.admin_chat .admin_chat_wrapper .chate_body {
+  padding: 20px;
+  background-color: transparent;
+  height: 410px;
+  overflow-y: scroll;
+}
+.admin_chat .admin_chat_wrapper .chate_body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #eee;
+}
+.admin_chat .admin_chat_wrapper .chate_body::-webkit-scrollbar-thumb {
+  background-color: #1fc345fc;
+  border-radius: 5px;
+  border: 1px solid dodgerblue;
+}

@@ -157,7 +157,11 @@ const Header = () => {
                 </Badge>
               </>
             </div>
-            <Button variant="outlined" color="success" onClick={()=>navigate("/signup")}>
+            <Button
+              variant="outlined"
+              color="success"
+              onClick={() => navigate("/signup")}
+            >
               join
             </Button>
             {/* user profile */}

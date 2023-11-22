@@ -1,3 +1,6 @@
-.header{
-    padding: 10px 0;
+.admin_header {
+  padding: 20px;
+  background-color: transparent;
+  box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+  border-bottom: 2px solid #fff;
 }
