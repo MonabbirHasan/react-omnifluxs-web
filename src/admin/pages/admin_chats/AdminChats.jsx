@@ -238,7 +238,6 @@ const AdminChats = () => {
                     <InputGroup.Text
                       style={{
                         width: "100%",
-                        border: "none",
                         border: "2px solid #fff",
                         backgroundColor: "transparent",
                         boxShadow: "-2px -2px 5px #eee,2px 2px 5px #eee",
