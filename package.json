@@ -52,7 +52,8 @@
     "sortablejs": "^1.15.0",
     "styled-components": "^6.1.1",
     "swiper": "^11.0.4",
-    "typewriter-effect": "^2.21.0"
+    "typewriter-effect": "^2.21.0",
+    "uuidv4": "^6.2.13"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",

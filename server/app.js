@@ -7,6 +7,7 @@ const app = express();
  * IMPORT ALL ROUTER START HERE
  ********************************/
 const TestRouter = require("./routes/test.routes");
+const UsersRouter = require("./routes/users.routes");
 /****************************
  * ENCODED USES START HERE
  ****************************/
@@ -17,6 +18,7 @@ app.use(bodyParser.json());
  * ALL ROUTE HANDLING START HERE
  ***********************************/
 app.use("/api/test", TestRouter);
+app.use("/api/users", UsersRouter);
 /*************************************
  * WELCOME ROUTE HANDLING START HERE
  *************************************/

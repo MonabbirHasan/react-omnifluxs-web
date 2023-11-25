@@ -1,7 +1,5 @@
-// Import your MySQL connection
-const mysqlConnection = require('../config/db'); // Assuming you have a db configuration file
-
-// Define functions to interact with the users table
+// Import  MySQL connection
+const mysqlConnection = require('../config/db');
 
 // Function to get all users
 const getAllUsers = (callback) => {
