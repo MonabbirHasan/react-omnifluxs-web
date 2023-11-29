@@ -1,16 +1,16 @@
+const OFFICE_TEAM_CONTROLLER = require("../controller/office_teamsController/office_teams.controller");
 const express = require("express");
 const multer = require("multer");
 const path = require("path");
-const UserController = require("../controller/userController/users.controller");
 const router = express.Router();
 /**************************************************
- * USER IMAGE UPLOAD USING MULTER FUNCTION HERE
+ * ADS IMAGE UPLOAD USING MULTER FUNCTION HERE
  **************************************************/
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
     const currentDir = __dirname;
     const publicDir = path.join(currentDir, "../public");
-    const uploadsDir = path.join(publicDir, "uploads");
+    const uploadsDir = path.join(publicDir, "uploads/office_team");
     cb(null, uploadsDir);
   },
   filename: function (req, file, cb) {
@@ -19,11 +19,19 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage: storage });
 /************************
- * ALL USER ROUTES HERE
+ * ALL ADS ROUTES HERE
  ************************/
-router.patch("/:id", upload.single("user_image"), UserController.updateuser);
-router.post("/", upload.single("user_image"), UserController.createuser);
-router.delete("/:id", UserController.deletesuser);
-router.get("/:id", UserController.singleuser);
-router.get("/", UserController.alluser);
+router.patch(
+  "/:id",
+  upload.single("image"),
+  OFFICE_TEAM_CONTROLLER.update_office_teams
+);
+router.post(
+  "/",
+  upload.single("image"),
+  OFFICE_TEAM_CONTROLLER.create_office_teams
+);
+router.delete("/:id", OFFICE_TEAM_CONTROLLER.delete_office_teams);
+router.get("/:id", OFFICE_TEAM_CONTROLLER.single_office_teams);
+router.get("/", OFFICE_TEAM_CONTROLLER.all_office_teams);
 module.exports = router;

@@ -1,5 +1,6 @@
 const UserModels = require("../../models/users.models");
 const fs = require("fs");
+const path = require('path');
 const { uuid } = require("uuidv4");
 class UserController {
   /*************************************
@@ -26,24 +27,23 @@ class UserController {
     });
   };
   /*************************************
-   * GET CREATE USERS FROM DB MODELS
+   * CREATE USERS FROM DB MODELS
    *************************************/
   static createuser = async (req, res) => {
     try {
       const userData = {
-        uniqueid: Date.now() + "-" + Math.round(Math.random() * 1e9),
+        unique_id: Date.now() + "-" + Math.round(Math.random() * 1e9),
         username: req.body.username,
         email: req.body.email,
         phone: req.body.phone,
         image: req.file.originalname,
-        referral_code: req.body.referral_code,
-        role: req.body.role,
-        type: req.body.type,
-        isActivePlan: req.body.isActivePlan,
-        balance: req.body.balance,
-        status: req.body.status,
+        user_role: req.body.user_role,
+        user_type: req.body.user_type,
+        is_verified: req.body.is_verified,
+        password: req.body.password,
+        is_active: req.body.is_active,
       };
-      UserModels.createusermodel(userData, (err, result) => {
+      await UserModels.createusermodel(userData, (err, result) => {
         if (err) {
           return res.status(500).json({ error: "Failed to create user" });
         }
@@ -59,17 +59,16 @@ class UserController {
   static updateuser = (req, res) => {
     const { id } = req.params;
     const userData = {
-      uniqueid: Date.now() + "-" + Math.round(Math.random() * 1e9),
+      unique_id: Date.now() + "-" + Math.round(Math.random() * 1e9),
       username: req.body.username,
       email: req.body.email,
       phone: req.body.phone,
       image: req.file.originalname,
-      referral_code: req.body.referral_code,
-      role: req.body.role,
-      type: req.body.type,
-      isActivePlan: req.body.isActivePlan,
-      balance: req.body.balance,
-      status: req.body.status,
+      user_role: req.body.role,
+      user_type: req.body.type,
+      is_verified: req.body.is_verified,
+      password: req.body.password,
+      is_active: req.body.is_active,
     };
     UserModels.updateuser(id, userData, (err, result) => {
       if (err) {
@@ -93,13 +92,6 @@ class UserController {
       }
       res.json({ message: "User deleted successfully" });
     });
-    // await UserModels.singleusermodel(id, (err, users) => {
-    //   if (err) {
-    //     return res.status(500).json({ error: "Failed to retrieve user" });
-    //   }
-    //   res.status(200).json(users);
-
-    // });
   };
 }
 
