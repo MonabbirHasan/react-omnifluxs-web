@@ -1,5 +1,5 @@
 const express = require("express");
-const FUNDS_CONTROLLER = require("../controller/user_fundsController/user_funds.controller");
+const FUNDS_CONTROLLER = require("../controller/user_funds/user_funds.controller");
 const router = express.Router();
 
 router.get("/", FUNDS_CONTROLLER.all_funds);

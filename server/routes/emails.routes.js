@@ -1,4 +1,4 @@
-const EMAILS_CONTROLLER = require("../controller/emailsController/emails.controller");
+const EMAILS_CONTROLLER = require("../controller/emails/emails.controller");
 const express = require("express");
 const router = express.Router();
 router.get("/", EMAILS_CONTROLLER.all_emails);

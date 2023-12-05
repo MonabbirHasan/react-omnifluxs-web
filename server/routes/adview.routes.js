@@ -1,4 +1,4 @@
-const ADVIEW_CONTROLLER = require("../controller/adviewsController/adviews.controller");
+const ADVIEW_CONTROLLER = require("../controller/adviews/adviews.controller");
 const express = require("express");
 const router = express.Router();
 router.get("/", ADVIEW_CONTROLLER.all_adviews);

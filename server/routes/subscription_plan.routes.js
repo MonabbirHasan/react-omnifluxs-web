@@ -1,5 +1,5 @@
 const express = require("express");
-const SUBSCRIPTION_PLAN_CONTROLLER = require("../controller/subscription_planController/subscription_plan.controller");
+const SUBSCRIPTION_PLAN_CONTROLLER = require("../controller/subscription_plan/subscription_plan.controller");
 const router = express.Router();
 router.get("/", SUBSCRIPTION_PLAN_CONTROLLER.all_subscriopton_plan);
 router.post("/", SUBSCRIPTION_PLAN_CONTROLLER.create_subscriopton_plan);

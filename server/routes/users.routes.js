@@ -1,7 +1,7 @@
 const express = require("express");
 const multer = require("multer");
 const path = require("path");
-const UserController = require("../controller/userController/users.controller");
+const UserController = require("../controller/user/users.controller");
 const router = express.Router();
 /**************************************************
  * USER IMAGE UPLOAD USING MULTER FUNCTION HERE

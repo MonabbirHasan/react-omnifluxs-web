@@ -1,4 +1,4 @@
-const MESSAGES_CONTROLLER = require("../controller/messagesController/messages.controller");
+const MESSAGES_CONTROLLER = require("../controller/messages/messages.controller");
 const express = require("express");
 const router = express.Router();
 router.get("", MESSAGES_CONTROLLER.all_messages);

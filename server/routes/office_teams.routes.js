@@ -1,4 +1,4 @@
-const OFFICE_TEAM_CONTROLLER = require("../controller/office_teamsController/office_teams.controller");
+const OFFICE_TEAM_CONTROLLER = require("../controller/office_teams/office_teams.controller");
 const express = require("express");
 const multer = require("multer");
 const path = require("path");
