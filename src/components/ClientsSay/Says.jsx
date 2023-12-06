@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import PageTitle from "../Page_title/PageTitle";
 import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import "../../assets/css/media_query.css";
 import { ClientsData } from "../../utils/static/clientsData";
 import "./says.css";
@@ -12,7 +13,7 @@ const Says = () => {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 4,
+      items: 5,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -31,27 +32,20 @@ const Says = () => {
     <section className="client_say">
       <PageTitle title={"What Our Client Say?"} />
       <div className="slide-container">
-        <Carousel
-          responsive={responsive}
-          draggable={true}
-          showDots={false}
-          ssr={true}
-          infinite={true}
-          autoPlay={true}
-          autoPlaySpeed={3000}
-          transitionDuration={500}
-          removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
-        >
-          {ClientsData.reverse().map((item) => (
-            <div className="client_item">
-              <Avatar src={item.img} sx={{ width: "100px", height: "100px" }} />
+        <Carousel responsive={responsive} autoPlay={true}>
+          {ClientsData.map((item) => (
+            <div className="client_item" key={item.id}>
+              <Avatar
+                src={"http://localhost:5173/src/assets/img/client1.jpg"}
+                sx={{ width: "100px", height: "100px" }}
+              />
               <Typography
                 textAlign={"left"}
                 py={1}
                 textTransform={"capitalize"}
                 color={"black"}
               >
-                {item.name}
+                halal
               </Typography>
               <Typography
                 fontSize={"14px"}
@@ -60,10 +54,12 @@ const Says = () => {
                 color={"black"}
                 textAlign={"left"}
               >
-                {item.desc}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+                eligendi magnam dolor necessitatibus dignissimos est explicabo
+                vitae asperiores nisi consequuntur?
               </Typography>
               <div className="client_rating">
-                <ClientsRatings rating={item.rating} />
+                <ClientsRatings rating={3} />
               </div>
             </div>
           ))}

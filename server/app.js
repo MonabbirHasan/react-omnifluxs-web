@@ -10,13 +10,13 @@ const SubscriptionPlanRouter = require("./routes/subscription_plan.routes");
 const UserTransactionRouter = require("./routes/transaction.routes");
 const UserRaffaralRouter = require("./routes/user_raffarals.routes");
 const SubscriptionRouter = require("./routes/subscription.routes");
-const ConversationRouter = require("./routes/conversation.routes");
 const officeTeamRouter = require("./routes/office_teams.routes");
 const UserFoundsRouter = require("./routes/user_funds.routes");
 const MessageRouter = require("./routes/messages.routes");
 const AdviewRouter = require("./routes/adview.routes");
 const EmailsRouter = require("./routes/emails.routes");
 const UsersRouter = require("./routes/users.routes");
+const UserRole = require("./routes/user_role.routes");
 const AdsRouter = require("./routes/ads.routes");
 /****************************
  * ENCODED USES START HERE
@@ -30,13 +30,13 @@ app.use(bodyParser.json());
 app.use("/api/subscription_plan", SubscriptionPlanRouter);
 app.use("/api/user_raffarals", UserRaffaralRouter);
 app.use("/api/transaction", UserTransactionRouter);
-app.use("/api/conversation", ConversationRouter);
 app.use("/api/subscription", SubscriptionRouter);
 app.use("/api/office-teams", officeTeamRouter);
 app.use("/api/funds", UserFoundsRouter);
 app.use("/api/messages", MessageRouter);
 app.use("/api/adviews", AdviewRouter);
 app.use("/api/emails", EmailsRouter);
+app.use("/api/user-role", UserRole);
 app.use("/api/users", UsersRouter);
 app.use("/api/ads", AdsRouter);
 /*************************************

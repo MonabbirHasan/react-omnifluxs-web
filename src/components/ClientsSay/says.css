@@ -4,15 +4,15 @@
 }
 .client_say .client_item {
   padding: 10px;
-  width: 100%;
+  width: 320px;
   height: auto;
   background: #eee;
-  justify-content: center;
+  /* justify-content: center; */
   box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
   border: 3px solid #fff;
   transition: 0.5s;
   border-radius: 5px;
-  text-align: center;
+  text-align: left;
   margin: 20px 0;
 }
 .client_say .client_item:hover {

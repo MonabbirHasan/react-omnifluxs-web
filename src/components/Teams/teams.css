@@ -8,10 +8,10 @@
 }
 
 .teams .teams_wrapper .teams_item {
+  width: 320px;
   padding: 10px;
   background: #eee;
   box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
-  width: 100%;
   border: 3px solid #fff;
   transition: 0.5s;
   text-align: center;
