@@ -6,7 +6,9 @@ const app = express();
 /********************************
  * IMPORT ALL ROUTER START HERE
  ********************************/
+const UserRolePermissionRouter = require("./routes/user_role_permission.routes");
 const SubscriptionPlanRouter = require("./routes/subscription_plan.routes");
+const UserPermissionRouter = require("./routes/user_permission.routes");
 const UserTransactionRouter = require("./routes/transaction.routes");
 const UserRaffaralRouter = require("./routes/user_raffarals.routes");
 const SubscriptionRouter = require("./routes/subscription.routes");
@@ -15,29 +17,35 @@ const UserFoundsRouter = require("./routes/user_funds.routes");
 const MessageRouter = require("./routes/messages.routes");
 const AdviewRouter = require("./routes/adview.routes");
 const EmailsRouter = require("./routes/emails.routes");
-const UsersRouter = require("./routes/users.routes");
+const FoldersRouter = require("./routes/folders.routes");
 const UserRole = require("./routes/user_role.routes");
+const UsersRouter = require("./routes/users.routes");
+const FilesRouter = require("./routes/files.routes");
 const AdsRouter = require("./routes/ads.routes");
 /****************************
  * ENCODED USES START HERE
  ****************************/
-app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(cors());
 /***********************************
  * ALL ROUTE HANDLING START HERE
  ***********************************/
+app.use("/api/user-role-permission", UserRolePermissionRouter);
 app.use("/api/subscription_plan", SubscriptionPlanRouter);
+app.use("/api/user-permission", UserPermissionRouter);
 app.use("/api/user_raffarals", UserRaffaralRouter);
 app.use("/api/transaction", UserTransactionRouter);
 app.use("/api/subscription", SubscriptionRouter);
 app.use("/api/office-teams", officeTeamRouter);
 app.use("/api/funds", UserFoundsRouter);
 app.use("/api/messages", MessageRouter);
+app.use("/api/folders", FoldersRouter);
 app.use("/api/adviews", AdviewRouter);
 app.use("/api/emails", EmailsRouter);
 app.use("/api/user-role", UserRole);
 app.use("/api/users", UsersRouter);
+app.use("/api/files", FilesRouter);
 app.use("/api/ads", AdsRouter);
 /*************************************
  * WELCOME ROUTE HANDLING START HERE

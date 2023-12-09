@@ -36,6 +36,7 @@ class USER_PERMISSION_CONTROLLER {
       data,
       (err, results) => {
         if (err) {
+          console.log(err);
           return res
             .status(500)
             .json({ message: "failed to retrieve create user permission" });
