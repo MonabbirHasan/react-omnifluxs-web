@@ -3,9 +3,9 @@ const express = require("express");
 const multer = require("multer");
 const path = require("path");
 const router = express.Router();
-/**************************************************
- * ADS IMAGE UPLOAD USING MULTER FUNCTION HERE
- **************************************************/
+/*********************************************************
+ * OFFICE TEAM IMAGE UPLOAD USING MULTER FUNCTION HERE
+ *********************************************************/
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
     const currentDir = __dirname;
@@ -18,9 +18,7 @@ const storage = multer.diskStorage({
   },
 });
 const upload = multer({ storage: storage });
-/************************
- * ALL ADS ROUTES HERE
- ************************/
+
 router.patch(
   "/:id",
   upload.single("image"),
