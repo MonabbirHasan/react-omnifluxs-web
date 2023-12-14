@@ -25,5 +25,6 @@ router.patch("/:id", upload.single("user_image"), UserController.updateuser);
 router.post("/", upload.single("user_image"), UserController.createuser);
 router.delete("/:id", UserController.deletesuser);
 router.get("/:id", UserController.singleuser);
+router.post("/login", UserController.login);
 router.get("/", UserController.alluser);
 module.exports = router;

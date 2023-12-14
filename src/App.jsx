@@ -10,6 +10,7 @@ import RankReword from "./page/seller_dashboard/components/rank_reword/RankRewor
 import UsersOrder from "./page/seller_dashboard/components/user-order/UsersOrder";
 import TeamList from "./page/seller_dashboard/components/team_list/TeamList";
 import WatchAds from "./page/seller_dashboard/components/watch_ads/WatchAds";
+import SellerProfileView from "./page/seller_profile_view/SellerProfileView";
 import Payout from "./page/seller_dashboard/components/payout/Pyaout";
 import ProductDetails from "./page/yt_channel_details/ProductDetails";
 import Service_request from "./page/service_request/Service_request";
@@ -18,18 +19,22 @@ import Posts from "./page/seller_dashboard/components/posts/Posts";
 import Chats from "./page/seller_dashboard/components/chats/Chats";
 import ViewProducts from "./page/view_products/ViewProducts";
 import BlogDetails from "./page/blog_details/BlogDetails";
+import AdminLogin from "./admin/auth/login/AdminLogin";
 import Website_shop from "./page/website_shop/Shop";
 import Community from "./page/community/Community";
 import ForgotPass from "./auth/forgot/Forgot_pass";
 import Wishlists from "./page/wishlist/Wishlists";
 import WebOrder from "./page/web-order/WebOrder";
 import { Route, Routes } from "react-router-dom";
+import Forgot from "./admin/auth/forgot/Forgot";
 import SmmPanel from "./page/smmpanel/SmmPanel";
+import { AdminDashboard } from "./admin/pages";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Service from "./page/service/Service";
 import Courses from "./page/courses/Courses";
 import Pricing from "./page/pricing/Pricing";
 import Contact from "./page/contact/Contact";
+import Error from "./components/error/Error";
 import Signup from "./auth/signup/Signup";
 import Blogs from "./page/blogs/Blogs";
 import About from "./page/about/About";
@@ -38,13 +43,6 @@ import Help from "./page/help/Help";
 import Home from "./page/home/Home";
 import Cart from "./page/cart/Cart";
 /************************************************************/
-import { AdminDashboard } from "./admin/pages";
-import SellerProfileView from "./page/seller_profile_view/SellerProfileView";
-// import AdminProfile from "./admin/pages/admin_profile/AdminProfile";
-// import { AppContext } from "./context/AppContext";
-import AdminLogin from "./admin/auth/login/AdminLogin";
-import Error from "./components/error/Error";
-import Forgot from "./admin/auth/forgot/Forgot";
 function App() {
   return (
     <>

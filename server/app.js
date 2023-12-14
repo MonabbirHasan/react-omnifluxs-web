@@ -34,6 +34,7 @@ const UserRole = require("./routes/user_role.routes");
 const UsersRouter = require("./routes/users.routes");
 const FilesRouter = require("./routes/files.routes");
 const OrderRouter = require("./routes/order.routes");
+const LikesRouter = require("./routes/likes.routes");
 const AdsRouter = require("./routes/ads.routes");
 /****************************
  * ENCODED USES START HERE
@@ -72,6 +73,7 @@ app.use("/api/user-role", UserRole);
 app.use("/api/orders", OrderRouter);
 app.use("/api/users", UsersRouter);
 app.use("/api/files", FilesRouter);
+app.use("/api/likes", LikesRouter);
 app.use("/api/ads", AdsRouter);
 /*************************************
  * WELCOME ROUTE HANDLING START HERE

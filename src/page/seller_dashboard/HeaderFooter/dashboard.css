@@ -1,6 +1,7 @@
 /* drawer_sidebar */
 .drawer_sidebar {
     padding: 5px;
+    font-family: sans-serif!important;
 }
 
 .dashboard_page {
@@ -18,7 +19,6 @@
     text-transform: capitalize;
     padding: 10px 0;
     display: block;
-    font-family: cursive;
 }
 
 .drawerHeader .dashboard_author_img {
@@ -61,7 +61,6 @@
     text-decoration: none;
     font-weight: bold;
     display: flex;
-    font-family: sans-serif !important;
 }
 
 .drawerHeader .sidebarLogo h3 a p {
@@ -94,7 +93,6 @@
 .css-4t3x6l-MuiPaper-root-MuiDrawer-paper ul li .css-10hburv-MuiTypography-root {
     font-size: 14px;
     color: #111;
-    font-family: cursive;
     font-weight: 400;
     letter-spacing: 0;
 }

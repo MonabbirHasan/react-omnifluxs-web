@@ -24,6 +24,7 @@ import {
   RateReviewSharp,
   ShoppingBag,
   ShoppingCartSharp,
+  Star,
   SubtitlesOutlined,
   Twitter,
   UnpublishedOutlined,
@@ -46,9 +47,11 @@ import {
 import {
   Badge,
   Button,
+  Col,
   Container,
   Modal,
   NavLink,
+  Row,
   Table,
 } from "react-bootstrap";
 import DashboardHeader from "../../HeaderFooter/DashboardHeader";
@@ -889,7 +892,7 @@ const Profile = () => {
                             Withdraw balance
                           </MuiButton>
                           <Typography
-                          onClick={()=>navigate("/seller_dashboard/payout")}
+                            onClick={() => navigate("/seller_dashboard/payout")}
                             py={3}
                             my={2}
                             sx={{
@@ -1095,7 +1098,31 @@ const Profile = () => {
                     /******************************************
                      * MY REVIEWS SECTION START HERE
                      ******************************************/
-                    <section id="my_reviews">my_reviews</section>
+                    <section id="my_reviews">
+                      <Row>
+                        <Col lg={1}>
+                          <Avatar>H</Avatar>
+                        </Col>
+                        <Col lg={8}>
+                          <Typography>Jhonn</Typography>
+                          <Typography>Pakistan</Typography>
+                          <Box>
+                            <Star htmlColor="orange" />
+                            <Star htmlColor="orange" />
+                            <Star htmlColor="orange" />
+                            <Star htmlColor="orange" />
+                            <Star htmlColor="orange" />
+                          </Box>
+                          <Typography>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Dolores quas magni rerum impedit corporis rem
+                            officiis voluptates! Corporis fugit sint inventore
+                            tempore, harum architecto modi et cum dolores dicta
+                            non?
+                          </Typography>
+                        </Col>
+                      </Row>
+                    </section>
                   ) : (
                     ""
                   )}

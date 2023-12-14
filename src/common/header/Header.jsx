@@ -1,27 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   LocalGroceryStoreOutlined,
   FavoriteBorder,
-  PersonOutline,
-  Login,
-  Logout,
   Person,
 } from "@mui/icons-material";
+import { NavLink, useNavigate } from "react-router-dom";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Container from "react-bootstrap/Container";
-import { Badge, Box, Button, IconButton, Stack } from "@mui/material";
+import { Badge, Button } from "@mui/material";
 import { useAuth0 } from "@auth0/auth0-react";
 import logo from "../../assets/img/logo.png";
 import Navbar from "react-bootstrap/Navbar";
-import { NavLink, useNavigate } from "react-router-dom";
-import { Col, Image, Modal, Row } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import "./header.css";
-
 const Header = () => {
   const navigate = useNavigate();
   const { loginWithRedirect, isAuthenticated, user, logout } = useAuth0();
-
   return (
     <header>
       <Navbar fixed="top" expand="lg" className="bg-body-tertiary">
@@ -57,62 +52,20 @@ const Header = () => {
                   <NavLink to={"/shop"}>Website Shop</NavLink>
                 </NavDropdown.Item>
                 <NavDropdown.Item eventKey="4.3">
-                  <NavLink to={"/smm-panel"}>YouTube Shop</NavLink>
+                  <NavLink to={"/smm-panel"}>Smm Panel</NavLink>
                 </NavDropdown.Item>
                 <NavDropdown.Item eventKey="4.4">
                   <NavLink to={"/courses"}>Our Course</NavLink>
                 </NavDropdown.Item>
-                {/* <NavDropdown.Item eventKey="4.5">
-                  <NavLink to={"/web-order"}>Custom Order</NavLink>
-                </NavDropdown.Item> */}
               </NavDropdown>
               <Nav.Link hidden>
                 <NavLink to={"/pricing"}>pricing</NavLink>
               </Nav.Link>
-              {/* <Nav.Link>
-                <NavLink to={"/blogs"}>blogs</NavLink>
-              </Nav.Link> */}
-              {/* <Nav.Link>
-                <NavLink to={"/portfolio"}>portfolio</NavLink>
-              </Nav.Link> */}
-              {/* <NavDropdown title="Products" id="navbarScrollingDropdown">
-                  <NavDropdown.Item>
-                      <NavLink to={""}>YouTube</NavLink>
-                  </NavDropdown.Item>
-                  <NavDropdown.Item>
-                      <NavLink to={""}>Facebook</NavLink>
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item>
-                      <NavLink to={""}>Instagram</NavLink>
-                  </NavDropdown.Item>
-                  <NavDropdown.Item>
-                      <NavLink to={""}>Twitter</NavLink>
-                  </NavDropdown.Item>
-                  <NavDropdown.Item>
-                      <NavLink to={""}>Telegram</NavLink>
-                  </NavDropdown.Item>
-                  <NavDropdown.Item>
-                      <NavLink to={""}>Discord</NavLink>
-                  </NavDropdown.Item>
-                  <NavDropdown.Item>
-                      <NavLink to={""}>TikTok</NavLink>
-                  </NavDropdown.Item>
-                  <NavDropdown.Item>
-                      <NavLink to={""}>Likee</NavLink>
-                  </NavDropdown.Item>
-                  <NavDropdown.Item>
-                      <NavLink>Pub G</NavLink>
-                  </NavDropdown.Item>
-                  <NavDropdown.Item>
-                      <NavLink to={""}>Free Fire</NavLink>
-                  </NavDropdown.Item>
-              </NavDropdown> */}
               <Nav.Link>
-                <NavLink to={"/contact"}>Contact Us</NavLink>
+                <NavLink to={"/blogs"}>blogs</NavLink>
               </Nav.Link>
               <Nav.Link>
-                <NavLink to={"/community"}>community</NavLink>
+                <NavLink to={"/contact"}>Contact Us</NavLink>
               </Nav.Link>
             </Nav>
             {/* user profile */}

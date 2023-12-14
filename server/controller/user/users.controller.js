@@ -1,6 +1,6 @@
 const UserModels = require("../../models/users.models");
 const fs = require("fs");
-const path = require('path');
+const path = require("path");
 const { uuid } = require("uuidv4");
 class UserController {
   /*************************************
@@ -14,6 +14,27 @@ class UserController {
       res.status(200).json(users);
     });
   };
+  /*************************************
+   * GET SINGLE USERS FROM DB MODELS
+   *************************************/
+  static login(req, res) {
+    const { username, password } = req.body;
+    UserModels.getUserByUsername(username, password, (err, result) => {
+      if (err) {
+        console.error(err);
+        res.status(500).json({ error: "Failed to authenticate user" });
+      } else if (result.length === 0) {
+        res.status(401).json({ error: "User not found" });
+      } else {
+        const user = result[0];
+        if (user.password === password) {
+          res.json({ message: "Login successful", userId: user.id });
+        } else {
+          res.status(401).json({ error: "Invalid credentials" });
+        }
+      }
+    });
+  }
   /*************************************
    * GET SINGLE USERS FROM DB MODELS
    *************************************/

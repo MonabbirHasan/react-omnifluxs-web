@@ -2,7 +2,7 @@ import React from "react";
 import { Search, Star, StarBorder, StarHalf, Timer } from "@mui/icons-material";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import course_banner from "../../assets/img/course_banner.png";
-import { Button, IconButton, Typography } from "@mui/material";
+import { Box, Button, IconButton, Stack, Typography } from "@mui/material";
 import { courseData } from "../../utils/static/courseData";
 import { NavLink, useNavigate } from "react-router-dom";
 import InputGroup from "react-bootstrap/InputGroup";
@@ -13,10 +13,17 @@ import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import { useState } from "react";
 import "./courses.css";
+import { CRating } from "./CRating";
 const Courses = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  /***************************************
+   * COURSE ENROLL MODAL CONTROLL HERE
+   ***************************************/
+  const [ShowCourseEnrollModal, setShowCourseEnrollModal] = useState(false);
+  const handleCloseCourseEnrollModal = () => setShowCourseEnrollModal(false);
+  const handleShowCourseEnrollModal = () => setShowCourseEnrollModal(true);
   return (
     <>
       <Header />
@@ -90,115 +97,7 @@ const Courses = () => {
                     {/* courseses price and rating */}
                     <div className="course_item_footer">
                       <div className="course_rating">
-                        {items.rating == "1.5" ? (
-                          <>
-                            <span>
-                              <Star />
-                            </span>
-                            <span>
-                              <StarHalf />
-                            </span>
-                            <span>
-                              <StarBorder />
-                            </span>
-                            <span>
-                              <StarBorder />
-                            </span>
-                            <span>
-                              <StarBorder />
-                            </span>
-                          </>
-                        ) : items.rating == "2.5" ? (
-                          <>
-                            <span>
-                              <Star />
-                            </span>
-                            <span>
-                              <Star />
-                            </span>
-                            <span>
-                              <StarHalf />
-                            </span>
-                            <span>
-                              <StarBorder />
-                            </span>
-                            <span>
-                              <StarBorder />
-                            </span>
-                          </>
-                        ) : items.rating == "3.5" ? (
-                          <>
-                            <span>
-                              <Star />
-                            </span>
-                            <span>
-                              <Star />
-                            </span>
-                            <span>
-                              <Star />
-                            </span>
-                            <span>
-                              <StarHalf />
-                            </span>
-                            <span>
-                              <StarBorder />
-                            </span>
-                          </>
-                        ) : items.rating == "4.5" ? (
-                          <>
-                            <span>
-                              <Star />
-                            </span>
-                            <span>
-                              <Star />
-                            </span>
-                            <span>
-                              <Star />
-                            </span>
-                            <span>
-                              <Star />
-                            </span>
-                            <span>
-                              <StarHalf />
-                            </span>
-                          </>
-                        ) : items.rating == "5" ? (
-                          <>
-                            <span>
-                              <Star />
-                            </span>
-                            <span>
-                              <Star />
-                            </span>
-                            <span>
-                              <Star />
-                            </span>
-                            <span>
-                              <Star />
-                            </span>
-                            <span>
-                              <Star />
-                            </span>
-                          </>
-                        ) : (
-                          <>
-                            <span>
-                              <Star />
-                            </span>
-                            <span>
-                              <StarHalf />
-                            </span>
-                            <span>
-                              <StarBorder />
-                            </span>
-                            <span>
-                              <StarBorder />
-                            </span>
-                            <span>
-                              <StarBorder />
-                            </span>
-                          </>
-                        )}
+                        <CRating rating={items.rating} />
                       </div>
                       <div className="course_price">
                         <del className="old_price">{items.old_price}</del>
@@ -213,7 +112,11 @@ const Courses = () => {
                       >
                         view details
                       </Button>
-                      <Button variant="contained" sx={{ mt: 3 }}>
+                      <Button
+                        onClick={handleShowCourseEnrollModal}
+                        variant="contained"
+                        sx={{ mt: 3 }}
+                      >
                         enroll now
                       </Button>
                     </div>
@@ -276,6 +179,56 @@ const Courses = () => {
           <Button onClick={handleClose} variant="primary">
             Understood
           </Button>
+        </Modal.Footer>
+      </Modal>
+      {/************************************
+       * ENROLL DETAILS MODAL START ERE
+       **************************************/}
+      <Modal show={ShowCourseEnrollModal} onHide={handleCloseCourseEnrollModal}>
+        <Modal.Header>
+          <Modal.Title>Enroll Now</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Typography>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga odit
+            quaerat reprehenderit eos nisi voluptate soluta sit, itaque,
+            explicabo sapiente similique qui deserunt distinctio officiis dicta
+            quibusdam perspiciatis amet porro ullam incidunt optio laborum. Nisi
+            praesentium suscipit possimus perferendis voluptas provident,
+            deleniti molestiae vitae totam laudantium. Inventore esse quod
+            voluptatibus odio, quo sequi obcaecati sit ad minus similique ipsum,
+            cum quibusdam cupiditate optio dolor harum magni eaque molestiae
+            blanditiis, animi unde dolore ut alias. Ducimus ipsa quod expedita
+            illum temporibus reprehenderit mollitia accusantium vitae, nulla
+            tenetur et debitis voluptatum placeat quis sint ullam nobis
+            doloribus natus odio enim ab aliquam!
+          </Typography>
+        </Modal.Body>
+        <Modal.Footer>
+          <Stack direction={"row"} spacing={10}>
+            <Box>
+              <Typography fontWeight={600} pt={1} color={"purple"}>
+                Total Charges : $500
+              </Typography>
+            </Box>
+            <Box>
+              <Button
+                variant="outlined"
+                color="error"
+                sx={{ marginRight: "5px" }}
+                onClick={handleCloseCourseEnrollModal}
+              >
+                Close
+              </Button>
+              <Button
+                variant="contained"
+                sx={{ backgroundColor: "green" }}
+                onClick={handleCloseCourseEnrollModal}
+              >
+                let's pay
+              </Button>
+            </Box>
+          </Stack>
         </Modal.Footer>
       </Modal>
       {/************************************
