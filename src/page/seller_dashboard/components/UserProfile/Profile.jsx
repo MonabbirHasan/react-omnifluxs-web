@@ -1099,29 +1099,60 @@ const Profile = () => {
                      * MY REVIEWS SECTION START HERE
                      ******************************************/
                     <section id="my_reviews">
-                      <Row>
-                        <Col lg={1}>
-                          <Avatar>H</Avatar>
-                        </Col>
-                        <Col lg={8}>
-                          <Typography>Jhonn</Typography>
-                          <Typography>Pakistan</Typography>
-                          <Box>
-                            <Star htmlColor="orange" />
-                            <Star htmlColor="orange" />
-                            <Star htmlColor="orange" />
-                            <Star htmlColor="orange" />
-                            <Star htmlColor="orange" />
-                          </Box>
-                          <Typography>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Dolores quas magni rerum impedit corporis rem
-                            officiis voluptates! Corporis fugit sint inventore
-                            tempore, harum architecto modi et cum dolores dicta
-                            non?
-                          </Typography>
-                        </Col>
-                      </Row>
+                      {Array.from({ length: 13 }, (x) => x).map((i) => (
+                        <Card className="my-2">
+                          <Card.Body>
+                            <Row>
+                              <Col lg={1}>
+                                <Avatar>H</Avatar>
+                              </Col>
+                              <Col lg={8}>
+                                <Typography
+                                  textTransform={"capitalize"}
+                                  fontSize={"16px"}
+                                  fontWeight={600}
+                                >
+                                  Jhonn
+                                </Typography>
+                                <Typography
+                                  textTransform={"capitalize"}
+                                  fontSize={"14px"}
+                                  color={"GrayText"}
+                                >
+                                  Pakistan
+                                </Typography>
+                                <Box>
+                                  <Star
+                                    htmlColor="orange"
+                                    sx={{ fontSize: "14px" }}
+                                  />
+                                  <Star
+                                    htmlColor="orange"
+                                    sx={{ fontSize: "14px" }}
+                                  />
+                                  <Star
+                                    htmlColor="orange"
+                                    sx={{ fontSize: "14px" }}
+                                  />
+                                  <Star
+                                    htmlColor="orange"
+                                    sx={{ fontSize: "14px" }}
+                                  />
+                                  <Star
+                                    htmlColor="orange"
+                                    sx={{ fontSize: "14px" }}
+                                  />
+                                </Box>
+                                <Card.Text>
+                                  Some quick example text to build on the card
+                                  title and make up the bulk of the card's
+                                  content.
+                                </Card.Text>
+                              </Col>
+                            </Row>
+                          </Card.Body>
+                        </Card>
+                      ))}
                     </section>
                   ) : (
                     ""

@@ -31,18 +31,18 @@ const EventMangement = () => {
   const [TaskStatus, setTaskStatus] = useState("");
   const [todo, setTodo] = useState([]);
 
-  useEffect(() => {
-    // Load Todos from localStorage when the component mounts
-    const storedTodos = JSON.parse(localStorage.getItem("todos"));
-    if (storedTodos) {
-      setTodo(storedTodos);
-    }
-  }, []);
+  // useEffect(() => {
+  //   // Load Todos from localStorage when the component mounts
+  //   const storedTodos = JSON.parse(localStorage.getItem("todos"));
+  //   if (storedTodos) {
+  //     setTodo(storedTodos);
+  //   }
+  // }, []);
 
-  useEffect(() => {
-    // Save Todos to localStorage whenever todos state changes
-    localStorage.setItem("todos", JSON.stringify(todo));
-  }, [todo]);
+  // useEffect(() => {
+  //   // Save Todos to localStorage whenever todos state changes
+  //   localStorage.setItem("todos", JSON.stringify(todo));
+  // }, [todo]);
 
   const AddTask = () => {
     if (
@@ -60,20 +60,19 @@ const EventMangement = () => {
       task_status: TaskStatus,
       task_description: taskDescription,
     };
-
-    setTodo([...todo, newTask]); // Add the new task to the existing todos
-    // Clear the input fields after adding the task
-    setTaskTitle("");
-    setTaskDate("");
-    setTaskStatus("");
-    setTaskDescription("");
+    console.log(newTask);
+    // setTodo([...todo, newTask]);
+    // setTaskTitle("");
+    // setTaskDate("");
+    // setTaskStatus("");
+    // setTaskDescription("");
   };
-  useEffect(() => {}, []);
-  const handleTaskDelete = (id) => {
-    const updatedTodos = todo.filter((task) => task.id !== id);
-    setTodo(updatedTodos);
-    localStorage.setItem("todos", JSON.stringify(updatedTodos));
-  };
+  // useEffect(() => {}, []);
+  // const handleTaskDelete = (id) => {
+  //   const updatedTodos = todo.filter((task) => task.id !== id);
+  //   setTodo(updatedTodos);
+  //   localStorage.setItem("todos", JSON.stringify(updatedTodos));
+  // };
 
   return (
     <div className="events_management">

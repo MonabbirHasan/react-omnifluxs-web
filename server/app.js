@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const express = require("express");
 const cors = require("cors");
 const app = express();
+const session = require("express-session");
 /********************************
  * IMPORT ALL ROUTER START HERE
  ********************************/
@@ -30,12 +31,21 @@ const ClientsRouter = require("./routes/clients.routes");
 const AdviewRouter = require("./routes/adview.routes");
 const EmailsRouter = require("./routes/emails.routes");
 const CourseRouter = require("./routes/course.routes");
+const EventsRouter = require("./routes/events.routes");
 const UserRole = require("./routes/user_role.routes");
 const UsersRouter = require("./routes/users.routes");
 const FilesRouter = require("./routes/files.routes");
 const OrderRouter = require("./routes/order.routes");
 const LikesRouter = require("./routes/likes.routes");
 const AdsRouter = require("./routes/ads.routes");
+// Use express-session middleware
+app.use(
+  session({
+    secret: "your-secret-key", // Change this to a secure key
+    resave: false,
+    saveUninitialized: false,
+  })
+);
 /****************************
  * ENCODED USES START HERE
  ****************************/
@@ -69,6 +79,7 @@ app.use("/api/clients", ClientsRouter);
 app.use("/api/adviews", AdviewRouter);
 app.use("/api/courses", CourseRouter);
 app.use("/api/emails", EmailsRouter);
+app.use("/api/events", EventsRouter);
 app.use("/api/user-role", UserRole);
 app.use("/api/orders", OrderRouter);
 app.use("/api/users", UsersRouter);

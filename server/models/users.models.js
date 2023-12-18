@@ -9,7 +9,7 @@ class UserModels {
   /*---------GET USER BY USERNAME MODAL------------*/
   static getUserByUsername(username, password, callback) {
     const sql = "SELECT * FROM users WHERE username = ? AND password=?";
-    db.query(sql, username, password, callback);
+    db.query(sql, [username, password], callback);
   }
   /*---------SINGLE USER MODAL------------*/
   static async singleusermodel(id, callback) {

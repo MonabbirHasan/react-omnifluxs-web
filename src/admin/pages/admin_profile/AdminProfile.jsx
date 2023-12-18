@@ -31,11 +31,13 @@ import {
   FolderOutlined,
   Home,
   Image,
+  MessageRounded,
   Search,
   Share,
 } from "@mui/icons-material";
 import FolderFile from "./FolderFile";
 import About from "./About";
+import AdminBlogs from "./AdminBlogs";
 const galleryData = [
   {
     id: 1,
@@ -272,9 +274,7 @@ const AdminProfile = () => {
               width={"100%"}
               height={"450px"}
               style={{ zIndex: "-1" }}
-              src={
-                "https://images.unsplash.com/photo-1415750465391-51ed29b1e610?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8&w=1000&q=80"
-              }
+              src={"https://vetra.laborasyon.com/assets/images/profile-bg.jpg"}
             />
             <div className="admin_profile_body">
               <Box
@@ -337,7 +337,7 @@ const AdminProfile = () => {
                           <Tab
                             label={
                               <Typography>
-                                <Home /> Home
+                                <MessageRounded /> Message
                               </Typography>
                             }
                             value={1}
@@ -374,7 +374,9 @@ const AdminProfile = () => {
               </Box>
               <Box className="admin_profile_footer">
                 {TabsValue === 1 ? (
-                  <Box>item {TabsValue}</Box>
+                  <Box>
+                    <AdminBlogs />
+                  </Box>
                 ) : TabsValue === 2 ? (
                   <Box p={2}>
                     <About />

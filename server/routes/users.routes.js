@@ -1,8 +1,8 @@
+const UserController = require("../controller/user/users.controller");
 const express = require("express");
 const multer = require("multer");
-const path = require("path");
-const UserController = require("../controller/user/users.controller");
 const router = express.Router();
+const path = require("path");
 /**************************************************
  *IMAGE UPLOAD USING MULTER FUNCTION HERE
  **************************************************/
@@ -25,6 +25,7 @@ router.patch("/:id", upload.single("user_image"), UserController.updateuser);
 router.post("/", upload.single("user_image"), UserController.createuser);
 router.delete("/:id", UserController.deletesuser);
 router.get("/:id", UserController.singleuser);
+router.post("/logout", UserController.logout);
 router.post("/login", UserController.login);
 router.get("/", UserController.alluser);
 module.exports = router;

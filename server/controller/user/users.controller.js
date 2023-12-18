@@ -7,15 +7,23 @@ class UserController {
    * GET ALL USERS FROM DB MODELS
    *************************************/
   static alluser = async (req, res) => {
+    const userData = req.session.user;
     await UserModels.allUsersmodel((err, users) => {
       if (err) {
         return res.status(500).json({ error: "Failed to retrieve users" });
       }
-      res.status(200).json(users);
+      // if (userData) {
+      //   // User is logged in, access userData
+      //   res.status(200).json({ users });
+      // } else {
+      //   // User is not logged in
+      //   res.status(401).json({ error: "Unauthorized user" });
+      // }
+      res.status(200).json({ users });
     });
   };
   /*************************************
-   * GET SINGLE USERS FROM DB MODELS
+   * LOGIN USERS FROM DB MODELS
    *************************************/
   static login(req, res) {
     const { username, password } = req.body;
@@ -28,10 +36,31 @@ class UserController {
       } else {
         const user = result[0];
         if (user.password === password) {
-          res.json({ message: "Login successful", userId: user.id });
+          req.session.user = {
+            id: user.id,
+            username: user.username,
+            email: user.email,
+          };
+          const userData = req.session.user;
+          res.json({
+            message: "Login successful",
+            userId: user.id,
+            sessions_data: userData,
+          });
         } else {
           res.status(401).json({ error: "Invalid credentials" });
         }
+      }
+    });
+  }
+  static logout(req, res) {
+    // Destroy session on logout
+    req.session.destroy((err) => {
+      if (err) {
+        console.error(err);
+        res.status(500).json({ error: "Logout failed" });
+      } else {
+        res.json({ message: "Logged out" });
       }
     });
   }
