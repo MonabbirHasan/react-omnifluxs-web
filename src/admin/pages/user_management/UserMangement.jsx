@@ -1,10 +1,13 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./user_management.css";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
+import { Delete, Edit } from "@mui/icons-material";
+import { InputGroup, Toast } from "react-bootstrap";
+import DataTable from "datatables.net-dt";
 import Form from "react-bootstrap/Form";
 import {
+  Alert,
   Avatar,
-  Box,
   IconButton,
   Button as MuiButton,
   FormControl as MuiFormControl,
@@ -14,15 +17,10 @@ import {
   TableBody,
   TableCell,
   TableContainer,
-  TableFooter,
   TableHead,
   TableRow,
-  TextField,
   Typography,
 } from "@mui/material";
-import { InputGroup } from "react-bootstrap";
-import DataTable from "datatables.net-dt";
-import { Delete, Edit } from "@mui/icons-material";
 const UserMangement = () => {
   useEffect(() => {
     const table = new DataTable("#user_data_table");
@@ -45,6 +43,56 @@ const UserMangement = () => {
   const text_color = {
     color: "white",
   };
+  /*************************************************
+   * USERS INFORMATION SAVING FUNCTION START HERE
+   *************************************************/
+  const [isAdmin, setIsAdmin] = useState(false);
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [status, setStatus] = useState(false);
+  const [email, setEmail] = useState("");
+  const [err, setErr] = useState("");
+  const submitForm = () => {
+    // Check if fields are not empty
+    if (username.trim() === "") {
+      // Handle empty username
+      setErr("please Enter username");
+      // Set an error state or display a message to the user
+      return;
+    }
+
+    if (password.trim() === "") {
+      // Handle empty password
+      setErr("please Enter password");
+      // Set an error state or display a message to the user
+      return;
+    }
+
+    if (email.trim() === "") {
+      // Handle empty email
+      setErr("please Enter email");
+      // Set an error state or display a message to the user
+      return;
+    }
+    if (status.trim() === "") {
+      setErr("please Enter status");
+      return;
+    }
+    if (isAdmin.trim() === "") {
+      setErr("please Enter isAdmin");
+      return;
+    }
+    const data = {
+      username: username,
+      email: email,
+      password: password,
+      status: status,
+      isAdmin: isAdmin,
+    };
+    console.log(data);
+    // If all fields are not empty, proceed with further actions (e.g., API call)
+  };
+
   return (
     <div className="UserMangement">
       <div className="user_management_wrapper">
@@ -61,41 +109,60 @@ const UserMangement = () => {
           >
             add new users or saller
           </Typography>
+          <Alert
+            sx={{
+              py: 1,
+              my: 1,
+              textTransform: "capitalize",
+              fontWeight: "500",
+              fontSize: "1rem",
+            }}
+          >
+            {err.length > 0 ? err : ""}
+          </Alert>
           <MuiFormControl fullWidth>
             <FloatingLabel
               controlId="floatingInput"
               label="Enter Full Name"
               className="mb-3"
             >
-              <Form.Control type="text" placeholder="name@example.com" />
+              <Form.Control
+                onChange={(e) => setUsername(e.target.value)}
+                type="text"
+                placeholder="name@example.com"
+              />
             </FloatingLabel>
             <FloatingLabel
               controlId="floatingInput"
               label="Enter Email Address"
               className="mb-3"
             >
-              <Form.Control type="text" placeholder="name@example.com" />
+              <Form.Control
+                onChange={(e) => setEmail(e.target.value)}
+                type="text"
+                placeholder="name@example.com"
+              />
             </FloatingLabel>
             <FloatingLabel
               controlId="floatingInput"
-              label="Enter Phone"
+              label="Enter Password"
               className="mb-3"
             >
-              <Form.Control type="text" placeholder="name@example.com" />
-            </FloatingLabel>
-            <FloatingLabel
-              controlId="floatingInput"
-              label="Enter Raffer code"
-              className="mb-3"
-            >
-              <Form.Control type="text" placeholder="name@example.com" />
+              <Form.Control
+                onChange={(e) => setPassword(e.target.value)}
+                type="text"
+                placeholder="password"
+              />
             </FloatingLabel>
             <FloatingLabel
               controlId="floatingInput"
               label="Is admin"
               className="mb-3"
             >
-              <Form.Select aria-label="Default select example">
+              <Form.Select
+                onChange={(e) => setIsAdmin(e.target.value)}
+                aria-label="Default select example"
+              >
                 <option value="1">admin</option>
                 <option value="2">normal</option>
                 <option value="3">team</option>
@@ -103,55 +170,23 @@ const UserMangement = () => {
             </FloatingLabel>
             <FloatingLabel
               controlId="floatingInput"
-              label="Is Verified?"
-              className="mb-3"
-            >
-              <Form.Select aria-label="Default select example">
-                <option value="1">Yes</option>
-                <option value="2" selected>
-                  No
-                </option>
-              </Form.Select>
-            </FloatingLabel>
-            <FloatingLabel
-              controlId="floatingInput"
-              label="Permission"
-              className="mb-3"
-            >
-              <Form.Select aria-label="Default select example">
-                <option value="1">Viewer</option>
-                <option value="2">Editor</option>
-              </Form.Select>
-            </FloatingLabel>
-            <InputGroup className="mb-3">
-              <InputGroup.Text>
-                <Avatar>A</Avatar>
-              </InputGroup.Text>
-              <Form.Control type="file" />
-            </InputGroup>
-            <FloatingLabel
-              controlId="floatingInput"
-              label="Country"
-              className="mb-3"
-            >
-              <Form.Select aria-label="Default select example">
-                <option value="1">Bangladesh</option>
-                <option value="1">india</option>
-                <option value="1">Asia</option>
-              </Form.Select>
-            </FloatingLabel>
-            <FloatingLabel
-              controlId="floatingInput"
               label="Status"
               className="mb-3"
             >
-              <Form.Select aria-label="Default select example">
+              <Form.Select
+                onChange={(e) => setStatus(e.target.value)}
+                aria-label="Default select example"
+              >
                 <option value="1">Active</option>
                 <option value="0">InActive</option>
               </Form.Select>
             </FloatingLabel>
           </MuiFormControl>
-          <MuiButton sx={text_capitalized} variant="contained">
+          <MuiButton
+            onClick={submitForm}
+            sx={text_capitalized}
+            variant="contained"
+          >
             save user
           </MuiButton>
         </div>
