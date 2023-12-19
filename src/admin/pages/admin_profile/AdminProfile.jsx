@@ -403,6 +403,9 @@ const AdminProfile = () => {
                           <Box
                             sx={{
                               padding: "10px",
+                              // backgroundColor:"#eee",
+                              // boxShadow: '-2px -2px 5px #eee, 2px 2px 5px #eee',
+                              // border: '3px solid #fff',
                             }}
                           >
                             <Button

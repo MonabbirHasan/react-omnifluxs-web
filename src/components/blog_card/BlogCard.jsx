@@ -2,7 +2,7 @@ import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { NavLink, useNavigate } from 'react-router-dom';
 import "./blog_card.css";
-const BlogCard = ({ date, category, title, description, thumbnnail, id, imgurlPath }) => {
+const BlogCard = ({ date, category, title, description, thumbnnail, id }) => {
   var navigate = useNavigate();
   function createSlug(inputString) {
     // Convert to lowercase and replace spaces with hyphens

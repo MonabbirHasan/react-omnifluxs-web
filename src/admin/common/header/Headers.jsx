@@ -1,12 +1,11 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import {
-  AccountCircle,
   AccountCircleOutlined,
   ChatBubble,
-  ChatBubbleOutline,
   Logout,
   Message,
   Notifications,
+  Settings,
 } from "@mui/icons-material";
 import {
   Avatar,
@@ -16,13 +15,15 @@ import {
   Typography,
   Menu,
   MenuItem,
-  Divider,
 } from "@mui/material";
 import "./header.css";
 import { useNavigate } from "react-router-dom";
 const Headers = (props) => {
   const ProfileMenu = () => {
     props.updates();
+  };
+  const admin_notification = () => {
+    props.set_notification_page();
   };
   const MessageMenu = () => {
     props.redirectChatPage();
@@ -124,10 +125,58 @@ const Headers = (props) => {
           MenuListProps={{
             "aria-labelledby": "basic-button",
           }}
+          sx={{ marginRight: "10px", mt: "10px" }}
         >
-          <MenuItem onClick={MessageMenu}>
-            <ChatBubbleOutline color="success" /> Start Message
-          </MenuItem>
+          {/* onClick={MessageMenu} */}
+          <Stack
+            direction={"row"}
+            justifyContent={"space-between"}
+            paddingX={2}
+          >
+            <IconButton onClick={admin_notification}>
+              <ChatBubble />
+            </IconButton>
+            <Typography mt={1} textTransform={"capitalize"} fontWeight={"600"}>
+              Recent Message
+            </Typography>
+          </Stack>
+
+          {Array.from({ length: 5 }, (x) => {
+            return (
+              <MenuItem>
+                <Box
+                  sx={{
+                    padding: "10px",
+                    backgroundColor: "#fff",
+                    margin: "5px",
+                    borderRadius: "5px",
+                    // boxShadow: "2px 2px 5px #eee,-2px -2px 5px #eee",
+                  }}
+                >
+                  <Stack direction={"row"} spacing={2}>
+                    <Box pt={1}>
+                      <Avatar src="https://quomodothemes.website/html/dashra/img/chat-author1.png" />
+                    </Box>
+                    <Box>
+                      <Typography
+                        fontSize={16}
+                        fontWeight={"bold"}
+                        textTransform={"capitalize"}
+                      >
+                        Jhonny Room
+                      </Typography>
+                      <Typography fontSize={13} textTransform={"capitalize"}>
+                        your account has been....
+                      </Typography>
+                    </Box>
+                    <Stack>
+                      <Typography>10:30PM</Typography>
+                    </Stack>
+                  </Stack>
+                </Box>
+              </MenuItem>
+            );
+          })}
         </Menu>
       </Box>
       {/*HEADER OWNER NOTIFICATION OPTIONS MENU START HERE*/}
@@ -141,35 +190,47 @@ const Headers = (props) => {
             "aria-labelledby": "basic-button",
           }}
         >
-          <Box
-            sx={{
-              padding: "10px",
-              width: "320px",
-              backgroundColor: "#fff",
-              margin: "5px",
-              borderRadius: "5px",
-              boxShadow: "2px 2px 5px #eee,-2px -2px 5px #eee",
-            }}
+          <Stack
+            direction={"row"}
+            justifyContent={"space-between"}
+            paddingX={2}
           >
-            <Typography
-              sx={{
-                backgroundColor: "black",
-                color: "white",
-                borderRadius: "30px",
-                padding: "5px",
-                textTransform: "capitalize",
-                textAlign: "center",
-                fontSize: "14px",
-              }}
-            >
-              anouncements (20/06/2023)
+            <IconButton onClick={admin_notification}>
+              <Settings />
+            </IconButton>
+            <Typography mt={1} textTransform={"capitalize"} fontWeight={"600"}>
+              Recent Notification
             </Typography>
-            <Divider sx={{ pt: 1 }} variant="p" component="p" />
-            <Typography>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, atque.
-            </Typography>
-          </Box>
+          </Stack>
+          {Array.from({ length: 5 }, (x) => {
+            return (
+              <Box
+                sx={{
+                  padding: "10px",
+                  width: "320px",
+                  backgroundColor: "#fff",
+                  margin: "5px",
+                  borderRadius: "5px",
+                  boxShadow: "2px 2px 5px #eee,-2px -2px 5px #eee",
+                }}
+              >
+                <Stack direction={"row"} spacing={2}>
+                  <Box pt={1}>
+                    <Avatar
+                      sx={{ backgroundColor: "#27AE60" }}
+                      src="https://quomodothemes.website/html/dashra/img/notify-1.png"
+                    />
+                  </Box>
+                  <Box>
+                    <Typography fontSize={13} textTransform={"capitalize"}>
+                      your account has been created successfully don
+                    </Typography>
+                    <Typography fontSize={12}>2 days ago</Typography>
+                  </Box>
+                </Stack>
+              </Box>
+            );
+          })}
         </Menu>
       </Box>
     </>

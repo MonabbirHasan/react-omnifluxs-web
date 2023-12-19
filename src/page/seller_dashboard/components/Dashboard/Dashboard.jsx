@@ -506,7 +506,7 @@ const Dashboard = () => {
             <section className="date_time_calender">
               <div className="row">
                 {/* DATE AND TIME START HERE */}
-                <div className="col-md-6">
+                <div className="col-md-3">
                   <div className="date_time">
                     <p>{localTime}</p>
                     <p>{convertedDate}</p>
@@ -547,7 +547,7 @@ const Dashboard = () => {
                   </div>
                 </div>
                 {/* CALENDER START HERE */}
-                <div className="col-md-6">
+                <div className="col-md-7">
                   <LocalizationProvider dateAdapter={AdapterDayjs}>
                     <DemoContainer components={["DateRangeCalendar"]}>
                       <DateRangeCalendar className="custom-calendar" />

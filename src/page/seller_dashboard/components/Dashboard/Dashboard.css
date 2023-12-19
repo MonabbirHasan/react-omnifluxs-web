@@ -96,15 +96,15 @@
     padding: 20px;
     margin-top: 30px;
     border-radius: 5px;
-    background: #111;
-    box-shadow: -4px -4px 4px #bbb, 4px 4px 4px #bbb;
-    border: 1px solid black;
+    background: #eee;
+    box-shadow: -4px -4px 4px #eee, 4px 4px 4px #eee;
+    border: 1px solid #fff;
     border-radius: 5px;
 }
 
 .date_time_calender .date_time {
     padding: 5px;
-    background: #222;
+    background: #fff;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -119,14 +119,14 @@
 .date_time_calender .weather h2 {
     font-size: 16px;
     padding: 5px 0;
-    color: white;
+    color: #111;
     text-transform: capitalize;
     font-weight: normal;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .date_time_calender .weather .country_name {
-    color: white;
+    color: #111;
     font-size: 14px !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     margin: 0;
@@ -134,7 +134,7 @@
 }
 
 .date_time_calender .weather .temperature {
-    color: white;
+    color: #111;
     font-size: 14px !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     margin: 0;
@@ -142,7 +142,7 @@
 }
 
 .date_time_calender .weather .current_weather {
-    color: white;
+    color: #111;
     font-size: 14px !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     margin: 0;
@@ -151,13 +151,13 @@
 
 .date_time_calender .weather .weather_cloud svg {
     font-size: 2rem;
-    color: white;
+    color: #111;
 }
 
 /* date time style start here */
 .date_time_calender .date_time p {
     text-transform: uppercase;
-    color: white;
+    color: #111;
 }
 
 .date_time_calender .date_time p:first-child {
@@ -173,17 +173,18 @@
 }
 
 .date_time_calender .custom-calendar {
-    background-color: #222;
-    color: #333;
+    background-color: #fff;
+    color: #111;
 }
 
 .date_time_calender .css-10wpov9-MuiTypography-root {
-    color: white;
+    color: #111;
 }
 
 .date_time_calender .css-rhmlg1-MuiTypography-root-MuiDayCalendar-weekDayLabel {
-    color: white;
+    color: #fff;
     background: #333;
+    border-radius: 30px;
     border: 5px;
     margin-bottom: 10px;
 }

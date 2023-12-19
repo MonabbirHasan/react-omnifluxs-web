@@ -20,7 +20,7 @@
 .blog_card_wrapper .blog_card_item {
     padding: 10px;
     /* background: #eee; */
-    background: linear-gradient(40deg, var(--card_linear_gradient_first), var(--card_linear_gradient_second));
+    background: var(--card_border);
     box-shadow: -3px -3px 5px var(--card_shadow), 3px 3px 5px var(--card_shadow);
     border: 3px solid var(--card_border);
     border-radius: 5px;
@@ -82,7 +82,7 @@
     width: 30px;
     height: 30px;
     border-radius: 100%;
-    border: 3px solid var(--card_border);
+    border: 3px solid var(--peragraph_dark);
 }
 
 .blog_card_wrapper .blog_card_item .blog_post_content .author_info p {
@@ -90,7 +90,7 @@
     font-weight: 400;
     font-size: 14px;
     font-family: cursive;
-    color: var(--peragraph_light);
+    color: var(--peragraph_dark);
 }
 
 .blog_card_wrapper .blog_card_item .blog_post_content .blog_post_details {
@@ -102,7 +102,7 @@
     text-transform: capitalize;
     font-size: 18px;
     font-family: cursive;
-    color: var(--peragraph_light);
+    color: var(--peragraph_dark);
     display: inline-block;
     text-decoration: none;
     padding-bottom: 10px;
@@ -114,7 +114,7 @@
 
 .blog_card_wrapper .blog_card_item .blog_post_content .blog_post_details p {
     text-transform: capitalize;
-    color: var(--peragraph_light);
+    color: var(--peragraph_dark);
     font-size: 14px;
     font-family: sans-serif;
 }
